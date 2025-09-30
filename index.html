@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marlbots CAD Database - Robotics Design Examples & Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>Marlbots</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#lessons" class="nav-link">Lessons</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                     Marlbots CAD Database
+                </h1>
+                <p class="hero-subtitle">Robotics Design Examples & Learning Hub</p>
+                <p class="hero-description">
+                    Welcome to the Marlbot's CAD Database! 
+                    We hope to provide a place for learning and growing in CAD skills. 
+                    Feel free to explore the sample projects submitted by teams around the world, or hone your skills from the lessons provided.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-cube"></i>
+                        View Projects
+                    </a>
+                    <a href="#lessons" class="btn btn-secondary">
+                        <i class="fas fa-graduation-cap"></i>
+                        Start Learning
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="robot-animation">
+                    <div class="robot-body">
+                        <div class="robot-head"></div>
+                        <div class="robot-torso"></div>
+                        <div class="robot-arm left"></div>
+                        <div class="robot-arm right"></div>
+                        <div class="robot-leg left"></div>
+                        <div class="robot-leg right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Robotics Projects</h2>
+                <p class="section-subtitle">Explore projects from robotics teams worldwide</p>
+                <div class="submit-cad-container">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJE3JWB2flpql5qpD9v0ig_2NPXsawcY4aoJby7fWK-VwCvg/viewform?usp=sharing&ouid=112398788521990818304" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn btn-submit-cad">
+                        <i class="fas fa-plus-circle"></i>
+                        Submit Your CAD
+                    </a>
+                </div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="team-name-filter">Team Name:</label>
+                    <input type="text" id="team-name-filter" placeholder="Search team names...">
+                </div>
+                <div class="filter-group">
+                    <label for="team-number-filter">Team Number:</label>
+                    <input type="text" id="team-number-filter" placeholder="e.g., 1234">
+                </div>
+                <div class="filter-group">
+                    <label for="program-filter">Program Type:</label>
+                    <select id="program-filter">
+                        <option value="">All Programs</option>
+                        <option value="FTC">FIRST Tech Challenge (FTC)</option>
+                        <option value="FRC">FIRST Robotics Competition (FRC)</option>
+                        <option value="VEX">VEX Robotics Competition</option>
+                        <option value="VEXU">VEX U</option>
+                        <option value="RoboCup">RoboCup</option>
+                        <option value="Custom">Custom Project</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="season-filter">Season:</label>
+                    <select id="season-filter">
+                        <option value="">All Seasons</option>
+                        <option value="2024-25">Into the Deep (2024-25)</option>
+                        <option value="2023-24">Centerstage (2023-24)</option>
+                        <option value="2022-23">Powerplay (2022-23)</option>
+                        <option value="2021">Freight Frenzy (2021)</option>
+                        <option value="2020">Ultimate Goal (2020)</option>
+                        <option value="Reefscape 24-25">Reefscape (2024-25)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <button id="clear-filters" class="btn btn-secondary">
+                        <i class="fas fa-times"></i>
+                        Clear Filters
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projects-grid">
+                <!-- Project cards will be populated by JavaScript -->
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No projects found</h3>
+                <p>Try adjusting your filters or search terms</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons" class="lessons">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Learning Hub</h2>
+                <p class="section-subtitle">Utilize this section for tutorials and lessons!</p>
+            </div>
+
+            <div class="lessons-content">
+                <div class="lesson-categories">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <h3>Comprehensive Marlborough x Onshape Learning Center</h3>
+                        <p>Beginner-friendly tutorials for Onshape made by the Marlbots' Mentor</p>
+                        <ul class="lesson-list">
+                            <li><a href="https://docs.google.com/document/d/1vMKWcCIJzw5IhiVPN2cna4w0Rtw8j4LW4X8oQxE0XpE/edit?tab=t.0">Learning Center (includes videos and written instruction)</a></li>
+                            <li><a href="https://grabcad.com/library/50-cad-exercise-drawing-1">Suggested Sketch Practice</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>FTC Learning Hub</h3>
+                        <p>Learning resources from the Onshape site for robotics specifically</p>
+                        <ul class="lesson-list">
+                            <li><a href="https://learn.onshape.com/learning-paths/cad-for-robotics">CAD For Robotics Competitions Course</a></li>
+                            <li><a href="https://learn.onshape.com/catalog?labels=%5B%22Training%20Offerings%22%5D&values=%5B%22Self-Paced%20Courses%22%5D">Video Instructions</a></li>
+                            <li><a href="https://learn.onshape.com/learning-paths/introduction-to-cad">CAD Basics Course</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Beginner Projects</h3>
+                        <p>Providing examples of projects made by team members when starting out</p>
+                        <ul class="lesson-list">
+                            <li><a href="#">Making a Puzzle</a></li>
+                            <li><a href="#">Making a Keychain</a></li>
+                            <li><a href="#">Making a something else</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet the Marlbots</h2>
+                <p class="section-subtitle">Our passionate team of robotics engineers and designers</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Team Lead</h3>
+                        <p>Robotics Engineering</p>
+                        <div class="member-skills">
+                            <span class="skill">SolidWorks</span>
+                            <span class="skill">Python</span>
+                            <span class="skill">ROS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>CAD Specialist</h3>
+                        <p>Mechanical Design</p>
+                        <div class="member-skills">
+                            <span class="skill">Fusion 360</span>
+                            <span class="skill">Inventor</span>
+                            <span class="skill">Simulation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Electronics Engineer</h3>
+                        <p>Hardware Integration</p>
+                        <div class="member-skills">
+                            <span class="skill">PCB Design</span>
+                            <span class="skill">Arduino</span>
+                            <span class="skill">Sensors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="member-info">
+                        <h3>Software Developer</h3>
+                        <p>Control Systems</p>
+                        <div class="member-skills">
+                            <span class="skill">C++</span>
+                            <span class="skill">MATLAB</span>
+                            <span class="skill">Control Theory</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-stats">
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">CAD Models</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Tutorials</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Students</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions about our designs or want to collaborate?</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@marlbotscaddatabase.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h3>Website</h3>
+                            <p>marlbotscaddatabase.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="cad-help">CAD Design Help</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="lesson-request">Lesson Request</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-robot"></i>
+                        <span>Marlbots</span>
+                    </div>
+                    <p>Advancing robotics through innovative CAD design and education.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#lessons">Lessons</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Marlbots Robotics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
