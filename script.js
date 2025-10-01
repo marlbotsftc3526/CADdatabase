@@ -421,7 +421,7 @@ function filterProjects() {
     
     renderProjects(filteredProjects);
 }
-
+/*
 function clearFilters() {
     const teamNameFilter = document.getElementById('team-name-filter');
     const teamNumberFilter = document.getElementById('team-number-filter');
@@ -435,7 +435,7 @@ function clearFilters() {
     
     renderProjects(allProjects && allProjects.length ? allProjects : projectsData);
 }
-
+*/
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
