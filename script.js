@@ -53,7 +53,7 @@ const projectsData = [
         program: "FTC",
         season: "2024-25",
         country: "California",
-        description: "Advanced FTC robot design for underwater-themed competition challenges.",
+        description: " ",
         tags: ["FTC", "Into the Deep", "Advanced Design"],
         links: [
             { text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/170256185392c6aba00470ce/w/0cfbfe8478157d854f3f8a02/e/e6c65e2262ac2eac51b47f25", icon: "fas fa-cube" }
@@ -67,7 +67,7 @@ const projectsData = [
         program: "FTC",
         season: "2024-25",
         country: "Beijing, China",
-        description: "International FTC team's innovative robot design for Into the Deep season.",
+        description: " ",
         tags: ["FTC", "Into the Deep", "International"],
         links: [
             { text: "OnShape CAD", url: "https://cad.onshape.com/documents/c32e62fa8f9af654031f9b3c/w/2eab644d6a609b795ce9a77a/e/536f9659549c434f5e0964c3", icon: "fas fa-cube" }
@@ -81,7 +81,7 @@ const projectsData = [
         program: "FTC",
         season: "2024-25",
         country: "Kazakhstan",
-        description: "Kazakhstan FTC team's robot design featuring unique engineering solutions.",
+        description: " ",
         tags: ["FTC", "Into the Deep", "Unique Engineering"],
         links: [
             { text: "Google Drive", url: "https://drive.google.com/file/d/1o1S0sibZfOB8pSwWLc75GxJvxh2aKdH4/view?usp=sharing", icon: "fab fa-google-drive" }
