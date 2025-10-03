@@ -15,6 +15,7 @@ const projectsData = [
         links: [
             {text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/e572c65123251ef45b66f39e/w/f34b2f76e28714ad4e8fabda/e/53a251850136ccbe839f52d5?renderMode=0&uiState=68487e49a0494d1fc0b81a6f"}
         ]
+        //JANE - make local image folder with the things submitted to the form, Place each named image here
     },
     {
         id: 2,
