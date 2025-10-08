@@ -216,6 +216,21 @@ const projectsData = [
         
     },
 
+    {
+         id: 16,
+         title: 'Freight Frenzyrobot',
+         teamName: 'Workshop of Eternal Nonsense',
+         teamNumber: '17517',
+         program: 'FTC',
+         season: '21-22',
+         country: 'Saint-Petersberg, Russia',
+         Description: '' ,
+         tags: ['FTC','21-22'],
+        links: [
+            { text: +'Fusion 360',url: 'https://a360.co/4n5Slyq',icon: 'fas fa-cube'}
+               ]
+},
+
     
 ];
 
