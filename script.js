@@ -11,11 +11,11 @@ const projectsData = [
         season: "2024-25",
         country: "California",
         description: '',
-        tags: ["FTC", "Into the Deep", "Advanced Mechanisms"],
+        tags: ["FTC", "Into the Deep", "Advanced "],
         links: [
             {text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/e572c65123251ef45b66f39e/w/f34b2f76e28714ad4e8fabda/e/53a251850136ccbe839f52d5?renderMode=0&uiState=68487e49a0494d1fc0b81a6f"}
-        ]
-        //JANE - make local image folder with the things submitted to the form, Place each named image here
+        ],
+        //thumbnail: "data:image/png;base64,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"
     },
     {
         id: 2,
@@ -40,7 +40,7 @@ const projectsData = [
         program: "FTC",
         season: "2022-23",
         country: "California",
-        description: "",
+        description: ' ',
         tags: ["FTC", "Powerplay", "Power Management"],
         links: [
             { text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/1da9466f4ce20e1dd363e947/w/5f345e29b57b59c6e597a831/e/56d6b5b9e0591e7cd6478ee9?renderMode=0&uiState=68487fe6738b5b327a021919", icon: "fas fa-cube" }
@@ -110,7 +110,7 @@ const projectsData = [
         program: "FTC",
         season: "2024-25",
         country: "Romoland, California",
-        description: " ",
+        description: "",
         tags: ["FTC", "Into the Deep", "Gear Mechanisms"],
         links: [
             { text: "Google Drive", url: "https://drive.google.com/drive/folders/18JVktEYcFQx-_DtrzhA60dKceSzz2HPM?usp=sharing", icon: "fab fa-google-drive" }
@@ -202,20 +202,23 @@ const projectsData = [
     },
     {
         id: 15,
-        title: "Centerstage Robot",
+        title: "Into the Deep Robot",
         teamName: "Aperture in Reasons",
         teamNumber: "18742",
         program: "FTC",
-        season: "2023-24",
+        season: "2024-25",
         country: "Saint-Petersberg, Russia",
         description: " ",
-        tags: ["FTC", "Centerstage", "Precision Mechanisms"],
+        tags: ["FTC", "Into the deep", "Precision Mechanisms"],
         links: [
             { text: "Fusion 360", url: "https://a360.co/3YGdFQV", icon: "fas fa-cube" }
         ]
-        //thumbnail: "data:image/png;base64,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"
-    }
+        
+    },
+
+    
 ];
+
 
 // Google Sheet config (GViz JSON)
 const GOOGLE_SHEET_ID = '1snp1ROWqbTpuxhxcNPTm7MDR_iuvI27wdZBAFR_GkDY';
@@ -422,7 +425,7 @@ function filterProjects() {
     
     renderProjects(filteredProjects);
 }
-/*
+
 function clearFilters() {
     const teamNameFilter = document.getElementById('team-name-filter');
     const teamNumberFilter = document.getElementById('team-number-filter');
@@ -436,7 +439,7 @@ function clearFilters() {
     
     renderProjects(allProjects && allProjects.length ? allProjects : projectsData);
 }
-*/
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
