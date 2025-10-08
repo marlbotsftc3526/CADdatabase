@@ -1,0 +1,39 @@
+def layout(rowNum, name, num, pro, game, sea, country, url, format):
+    print ("{")
+    print("         id: " + rowNum + ",")
+    print("         title: " + "'" + game + "robot'" + ",")
+    print("         teamName: " + "'" + name + "'" + ",")
+    print("         teamNumber: " + "'" + num + "'" + ",")
+    print("         program: " + "'" + pro + "'" + ",")
+    print("         season: " + "'" + sea + "'" + ",")
+    print("         country: " + "'" + country + "'" + ",")
+    print("         Description: " + "'' " + ",")
+    print("         tags: [" + "'" + pro + "'" + "," + "'" + sea + "'" + "]" + ",")
+    print ("        links: [")
+    print ("            { text: " + "+" + "'" + format + "'" + "," + "url: " + "'" + url+ "'" + "," + "icon: 'fas fa-cube'" "}")
+    print ("               ]")
+    print ("}")
+
+
+layout("1","Marlbots",	"3526",	"FTC","	Into the Deep	","24-25	","California", "https://marlborough.onshape.com/documents/1da9466f4ce20e1dd363e947/w/5f345e29b57b59c6e597a831/e/56d6b5b9e0591e7cd6478ee9?renderMode=0&uiState=68487fe6738b5b327a021919", "Onshape")
+layout ("15"	"Workshop of Eternal Nonsense",	"17517",	"FTC",	"Freight Frenzy",	"21-22",	"Saint-Petersberg, Russia",	"https://a360.co/4n5Slyq",	"Fusion 360")
+
+"""
+ + ","
+
+Goal style:
+
+id: 14,
+        title: "Powerplay Robot",
+        teamName: "Aperture in Reasons",
+        teamNumber: "18742",
+        program: "FTC",
+        season: "2022-23",
+        country: "Saint-Petersberg, Russia",
+        description: "Russian FTC team's robot design for Powerplay season with advanced power systems.",
+        tags: ["FTC", "Powerplay", "Power Systems"],
+        links: [
+            { text: "Fusion 360", url: "https://a360.co/41UQUdI", icon: "fas fa-cube" }
+        ]
+"""
+
