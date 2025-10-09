@@ -230,7 +230,34 @@ const projectsData = [
             { text: +'Fusion 360',url: 'https://a360.co/4n5Slyq',icon: 'fas fa-cube'}
                ]
 },
-
+{
+         id: 17,
+         title: 'Powerplayrobot',
+         teamName: 'Workshop of Eternal Nonsense',
+         teamNumber: '17517',
+         program: 'FTC',
+         season: '22-23',
+         country: 'Saint-Petersberg, Russia',
+         Description: '' ,
+         tags: ['FTC','22-23'],
+        links: [
+            { text: +'Fusion 360',url: 'https://a360.co/3VOWA5w',icon: 'fas fa-cube'}
+               ]
+},
+{
+         id: 18,
+         title: 'Centerstagerobot',
+         teamName: 'Workshop of Eternal Nonsense',
+         teamNumber: '17517',
+         program: 'FTC',
+         season: '23-24',
+         country: 'Saint-Petersberg, Russia',
+         Description: '' ,
+         tags: ['FTC','23-24'],
+        links: [
+            { text: +'Fusion 360',url: 'https://a360.co/41WLbnJ',icon: 'fas fa-cube'}
+               ]
+},
     
 ];
 
