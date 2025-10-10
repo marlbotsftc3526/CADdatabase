@@ -186,7 +186,7 @@ body {
     margin-bottom: 1rem;
     line-height: 1.2;
     position: relative + 20;
-    animation: titleGlow 3s ease-in-out infinite alternate;
+   /* animation: titleGlow 3s ease-in-out infinite alternate;*/
 }
 
 @keyframes titleGlow {
@@ -401,7 +401,7 @@ section {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     position: relative;
-    animation: glow 2s /*ease-in-out infinite alternate;*/
+   /* animation: glow 2s ease-in-out infinite alternate;*/
 }
 
 @keyframes glow {
