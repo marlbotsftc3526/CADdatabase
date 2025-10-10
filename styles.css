@@ -169,6 +169,7 @@ body {
 }
 
 .hero-content {
+    padding-left: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,13 +188,6 @@ body {
     position: relative;
 }
    /* animation: titleGlow 3s ease-in-out infinite alternate;*/
-
-@media (min-width: 1024px) {
-  .hero-title {
-    justify-self: center;
-    transform: translateX(-0.75rem); /* subtle left shift */
-  }
-}
 
 
 @keyframes titleGlow {
