@@ -169,25 +169,39 @@ body {
 }
 
 .hero-content {
-    padding-left: 6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 4rem;
     position: relative;
     z-index: 2;
 }
 
+
 .hero-title {
-    animation: none;
     font-family: 'Orbitron', monospace;
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
     line-height: 1.2;
-    position: relative + 20;
-   /* animation: titleGlow 3s ease-in-out infinite alternate;*/
+    position: relative;
 }
+   /* animation: titleGlow 3s ease-in-out infinite alternate;*/
+
+@media (min-width: 1024px) {
+    .hero-title {
+        right: 2rem; /* tweak this for how far left you want */
+        position: relative;
+    }
+}
+
+/* @media (min-width: 1024px) {
+    .hero-title {
+        justify-self: center;
+        transform: translateX(-2rem);
+    }
+}
+*/
 
 @keyframes titleGlow {
     from { text-shadow: 0 0 30px rgba(139, 92, 246, 0.4); }
