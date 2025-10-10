@@ -170,24 +170,24 @@ body {
 
 .hero-content {
     padding-left: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    align-items: center;
     position: relative;
     z-index: 2;
 }
 
-
 .hero-title {
+    animation: none;
     font-family: 'Orbitron', monospace;
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
     line-height: 1.2;
-    position: relative;
-}
+    position: relative + 20;
    /* animation: titleGlow 3s ease-in-out infinite alternate;*/
+}
 
 
 @keyframes titleGlow {
