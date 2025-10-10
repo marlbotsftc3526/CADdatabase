@@ -169,7 +169,7 @@ body {
 }
 
 .hero-content {
-    padding-left: 3rem;
+    padding-left: 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
