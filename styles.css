@@ -1299,7 +1299,7 @@ section {
         padding: 1.5rem;
     }
 }
-
+/*
 .team-member {
     display: flex;
     flex-direction: column;
@@ -1310,7 +1310,8 @@ section {
 
 .member-photo img {
     width: 200px;  /* You can adjust the size */
-    height: auto;
+  /*  height: auto;
     margin-top: 20px;  /* Adds space between the description and the photo */
-    border-radius: 8px;  /* Optional, for rounded corners */
-}
+   /* border-radius: 8px;  /* Optional, for rounded corners */
+/*}
+*/
