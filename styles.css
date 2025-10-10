@@ -190,18 +190,12 @@ body {
 
 @media (min-width: 1024px) {
     .hero-title {
-        right: 2rem; /* tweak this for how far left you want */
-        position: relative;
-    }
-}
-
-/* @media (min-width: 1024px) {
-    .hero-title {
         justify-self: center;
         transform: translateX(-2rem);
     }
 }
-*/
+
+
 
 @keyframes titleGlow {
     from { text-shadow: 0 0 30px rgba(139, 92, 246, 0.4); }
