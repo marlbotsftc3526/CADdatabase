@@ -1320,6 +1320,21 @@ section {
   border: 0;
 }
 
+.submit-cad-container {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.submit-cad-container a {
+  color: inherit; /* makes it use the surrounding text color */
+  text-decoration: underline;
+}
+
+.submit-cad-container a:hover {
+  text-decoration: none;
+}
+
 /*
 .team-member {
     display: flex;
