@@ -258,7 +258,90 @@ const projectsData = [
             { text: +'Fusion 360',url: 'https://a360.co/41WLbnJ',icon: 'fas fa-cube'}
                ]
 },
-    
+{
+         id: 19,
+         title: 'Centerstagerobot',
+         teamName: 'Aperture in Reasons',
+         teamNumber: '18742',
+         program: 'FTC',
+         season: '23-24',
+         country: 'Saint-Petersberg, Russia',
+         Description: '' ,
+         tags: ['FTC','23-24'],
+        links: [
+            { text: +'Fusion 360',url: 'https://a360.co/3JZ2EpD',icon: 'fas fa-cube'}
+               ]
+},
+{
+         id: 20,
+         title: 'Into the Deeprobot',
+         teamName: 'Workshop of Eternal Nonsense',
+         teamNumber: '17517',
+         program: 'FTC',
+         season: '24-25',
+         country: 'Saint-Petersberg, Russia',
+         Description: '' ,
+         tags: ['FTC','24-25'],
+        links: [
+            { text: +'Fusion 360',url: 'https://a360.co/46EhmuJ',icon: 'fas fa-cube'}
+               ]
+},
+{
+         id: 21,
+         title: 'Into the Deeprobot',
+         teamName: 'Jedison Knights',
+         teamNumber: '23571',
+         program: 'FTC',
+         season: '24-25',
+         country: 'Florida',
+         Description: '' ,
+         tags: ['FTC','24-25'],
+        links: [
+            { text: +'Onshape',url: 'https://cad.onshape.com/documents/50800014c627fcc9703ba6ca/w/6febbbc7c904e9c144bd69cf/e/98db84c0e55934036605f1c4?renderMode=0&uiState=68cca7700ae616be1f3a3790',icon: 'fas fa-cube'}
+               ]
+},
+{
+         id: 22,
+         title: 'Centerstagerobot',
+         teamName: 'Despicable Machine',
+         teamNumber: '6200',
+         program: 'FTC',
+         season: '23-24',
+         country: 'Illinois',
+         Description: '' ,
+         tags: ['FTC','23-24'],
+        links: [
+            { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1djgmy-6gx8IAfvRVyzfnyhELNFy-Y1PH',icon: 'fas fa-cube'}
+               ]
+},
+    {
+         id: 23,
+         title: 'Into the Deeprobot',
+         teamName: 'Despicable Machine',
+         teamNumber: '6200',
+         program: 'FTC',
+         season: '24-25',
+         country: 'Illinois',
+         Description: '' ,
+         tags: ['FTC','24-25'],
+        links: [
+            { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1Jc2aDUr9MgoXgqtQy61NlD3kQQAGX1Ivv',icon: 'fas fa-cube'}
+               ]
+},
+{
+         id: 24,
+         title: 'Powerplayrobot',
+         teamName: 'Despicable Machine  ',
+         teamNumber: 'm200',
+         program: 'FTC',
+         season: '22-23',
+         country: 'Illinois',
+         Description: '' ,
+         tags: ['FTC','22-23'],
+        links: [
+            { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1YkzKEg-sL1i_bhEUy8mUvcaZLqrV_oW3',icon: 'fas fa-cube'}
+               ]
+},
 ];
 
 
