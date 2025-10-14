@@ -224,7 +224,7 @@ const projectsData = [
          program: 'FTC',
          season: '21-22',
          country: 'Saint-Petersberg, Russia',
-         Description: ' ' ,
+         Description: '' ,
          tags: ['FTC','21-22'],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/4n5Slyq',icon: 'fas fa-cube'}
@@ -236,7 +236,7 @@ const projectsData = [
          teamName: 'Workshop of Eternal Nonsense',
          teamNumber: '17517',
          program: 'FTC',
-         season: '22-23',
+         season: "22-23",
          country: 'Saint-Petersberg, Russia',
          Description: ' ' ,
          tags: ['FTC','22-23'],
