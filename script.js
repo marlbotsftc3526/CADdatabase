@@ -218,7 +218,7 @@ const projectsData = [
 
     {
          id: 16,
-         title: 'Freight Frenzyrobot',
+         title: 'Freight Frenzy Robot',
          teamName: 'Workshop of Eternal Nonsense',
          teamNumber: '17517',
          program: 'FTC',
@@ -232,7 +232,7 @@ const projectsData = [
 },
 {
          id: 17,
-         title: 'Powerplayrobot',
+         title: 'Powerplay Robot',
          teamName: 'Workshop of Eternal Nonsense',
          teamNumber: '17517',
          program: 'FTC',
@@ -246,7 +246,7 @@ const projectsData = [
 },
 {
          id: 18,
-         title: 'Centerstagerobot',
+         title: 'Centerstage Robot',
          teamName: 'Workshop of Eternal Nonsense',
          teamNumber: '17517',
          program: 'FTC',
@@ -260,7 +260,7 @@ const projectsData = [
 },
 {
          id: 19,
-         title: 'Centerstagerobot',
+         title: 'Centerstage Robot',
          teamName: 'Aperture in Reasons',
          teamNumber: '18742',
          program: 'FTC',
@@ -274,21 +274,21 @@ const projectsData = [
 },
 {
          id: 20,
-         title: 'Into the Deeprobot',
+         title: 'Into the Deep Robot',
          teamName: 'Workshop of Eternal Nonsense',
          teamNumber: '17517',
          program: 'FTC',
-         season: '24-25',
+         season: "24-25",
          country: 'Saint-Petersberg, Russia',
-         Description: ' ' ,
-         tags: ['FTC','24-25'],
+         Description: ' .' ,
+         tags: ['FTC',"24-25"],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/46EhmuJ',icon: 'fas fa-cube'}
                ]
 },
 {
          id: 21,
-         title: 'Into the Deeprobot',
+         title: 'Into the Deep Robot',
          teamName: 'Jedison Knights',
          teamNumber: '23571',
          program: 'FTC',
@@ -302,7 +302,7 @@ const projectsData = [
 },
 {
          id: 22,
-         title: 'Centerstagerobot',
+         title: 'Centerstage Robot',
          teamName: 'Despicable Machine',
          teamNumber: '6200',
          program: 'FTC',
@@ -316,7 +316,7 @@ const projectsData = [
 },
     {
          id: 23,
-         title: 'Into the Deeprobot',
+         title: 'Into the Deep Robot',
          teamName: 'Despicable Machine',
          teamNumber: '6200',
          program: 'FTC',
@@ -330,9 +330,9 @@ const projectsData = [
 },
 {
          id: 24,
-         title: 'Powerplayrobot',
-         teamName: 'Despicable Machine  ',
-         teamNumber: 'm200',
+         title: 'Powerplay Robot',
+         teamName: 'Despicable Machine',
+         teamNumber: '200',
          program: 'FTC',
          season: '22-23',
          country: 'Illinois',
