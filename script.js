@@ -338,10 +338,26 @@ const projectsData = [
          country: 'Illinois',
          Description: ' ' ,
          tags: ['FTC','22-23'],
-        links: [
+         links: [
             { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1YkzKEg-sL1i_bhEUy8mUvcaZLqrV_oW3',icon: 'fas fa-cube'}
                ]
 },
+
+{
+         id: 25,
+         title: 'Into The Deeprobot',
+         teamName: 'Crazy Artificial Intelligence',
+         teamNumber: '16596',
+         program: 'FTC',
+         season: '2024-2025',
+         country: 'Calgary, Alberta Canada',
+         Description: ' ' ,
+         tags: ['FTC','2024-2025'],
+        links: [
+            { text: +'Onshape',url: 'https://cad.onshape.com/documents/4570fcde98bc87019e040efe/w/17c558c3762d3579531fa58a/e/b353788416e51b54df81bc31?renderMode=0&uiState=68f05547ac6d63ee024cb879',icon: 'fas fa-cube'}
+               ]
+},
+    
 ];
 
 
