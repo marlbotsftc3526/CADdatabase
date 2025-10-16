@@ -178,7 +178,7 @@ const projectsData = [
         teamName: "Workshop of Eternal Nonsense",
         teamNumber: "17517",
         program: "FTC",
-        season: "22-22",
+        season: "21-22",
         country: "Saint-Petersberg, Russia",
         description: " ",
         tags: ["FTC", "Freight Frenzy", "Cargo Handling"],
