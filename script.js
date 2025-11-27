@@ -106,7 +106,7 @@ const projectsData = [
         id: 8,
         title: "Into the Deep Robot",
         teamName: "Gear Gurus",
-        teamNumber: "7238",
+        teamNumber: "7832",
         program: "FTC",
         season: "24-25",
         country: "Romoland, California",
