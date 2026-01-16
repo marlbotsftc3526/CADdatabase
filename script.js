@@ -280,7 +280,7 @@ const projectsData = [
          program: 'FTC',
          season: "24-25",
          country: 'Saint-Petersberg, Russia',
-         description: ' .' ,
+         description: ' ' ,
          tags: ['FTC',"24-25"],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/46EhmuJ',icon: 'fas fa-cube'}
@@ -351,7 +351,7 @@ const projectsData = [
          program: 'FTC',
          season: '24-25',
          country: 'Calgary, Alberta Canada',
-         description: ' .' ,
+         description: ' ' ,
          tags: ['FTC','24-25'],
         links: [
             { text: +'Onshape',url: 'https://cad.onshape.com/documents/4570fcde98bc87019e040efe/w/17c558c3762d3579531fa58a/e/b353788416e51b54df81bc31?renderMode=0&uiState=68f05547ac6d63ee024cb879',icon: 'fas fa-cube'}
