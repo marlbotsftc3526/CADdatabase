@@ -11,7 +11,7 @@ const projectsData = [
         season: "24-25",
         country: "California",
         description: '',
-        tags: ["FTC", "Into the Deep", "Advanced "],
+        tags: ["Into the Deep"],
         links: [
             {text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/e572c65123251ef45b66f39e/w/f34b2f76e28714ad4e8fabda/e/53a251850136ccbe839f52d5?renderMode=0&uiState=68487e49a0494d1fc0b81a6f"}
         ],
@@ -26,7 +26,7 @@ const projectsData = [
         season: "23-24",
         country: "California",
         description: '',
-        tags: ["FTC", "Centerstage", "Precision Scoring"],
+        tags: ["Centerstage"],
         links: [
             { text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/e90c60b27e433977608b9152/w/59237bb6890d87eb1fd8994c/e/752f3b7b2968df845d6e46fe?renderMode=0&uiState=68488124e97b2d1c16e4f9d9", icon: "fas fa-cube" }
         ]
@@ -41,7 +41,7 @@ const projectsData = [
         season: "22-23",
         country: "California",
         description: ' ',
-        tags: ["FTC", "Powerplay", "Power Management"],
+        tags: ["Powerplay"],
         links: [
             { text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/1da9466f4ce20e1dd363e947/w/5f345e29b57b59c6e597a831/e/56d6b5b9e0591e7cd6478ee9?renderMode=0&uiState=68487fe6738b5b327a021919", icon: "fas fa-cube" }
         ]
@@ -55,7 +55,7 @@ const projectsData = [
         season: "24-25",
         country: "California",
         description: " ",
-        tags: ["FTC", "Into the Deep", "Advanced Design"],
+        tags: ["Into the Deep"],
         links: [
             { text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/170256185392c6aba00470ce/w/0cfbfe8478157d854f3f8a02/e/e6c65e2262ac2eac51b47f25", icon: "fas fa-cube" }
         ]
@@ -69,7 +69,7 @@ const projectsData = [
         season: "24-25",
         country: "Beijing, China",
         description: " ",
-        tags: ["FTC", "Into the Deep", "International"],
+        tags: ["Into the Deep"],
         links: [
             { text: "OnShape CAD", url: "https://cad.onshape.com/documents/c32e62fa8f9af654031f9b3c/w/2eab644d6a609b795ce9a77a/e/536f9659549c434f5e0964c3", icon: "fas fa-cube" }
         ]
@@ -83,7 +83,7 @@ const projectsData = [
         season: "24-25",
         country: "Kazakhstan",
         description: " ",
-        tags: ["FTC", "Into the Deep", "Unique Engineering"],
+        tags: [ "Into the Deep"],
         links: [
             { text: "Google Drive", url: "https://drive.google.com/file/d/1o1S0sibZfOB8pSwWLc75GxJvxh2aKdH4/view?usp=sharing", icon: "fab fa-google-drive" }
         ]
@@ -97,7 +97,7 @@ const projectsData = [
         season: "24-25",
         country: "Indonesia",
         description: " ",
-        tags: ["FTC", "Into the Deep", "Innovative Design"],
+        tags: ["Into the Deep"],
         links: [
             { text: "OnShape CAD", url: "https://cad.onshape.com/documents/a080e33adb86f752eda2db0d/w/fa722723c4ec84c3256b1a7b/e/c246c7b98c62703770172f31", icon: "fas fa-cube" }
         ]
@@ -111,7 +111,7 @@ const projectsData = [
         season: "24-25",
         country: "Romoland, California",
         description: "",
-        tags: ["FTC", "Into the Deep", "Gear Mechanisms"],
+        tags: ["Into the Deep"],
         links: [
             { text: "Google Drive", url: "https://drive.google.com/drive/folders/18JVktEYcFQx-_DtrzhA60dKceSzz2HPM?usp=sharing", icon: "fab fa-google-drive" }
         ]
@@ -125,7 +125,7 @@ const projectsData = [
         season: "24-25",
         country: "Palmdale, California",
         description: " ",
-        tags: ["FTC", "Reefscape", "Advanced Scoring"],
+        tags: ["Reefscape"],
         links: [
             { text: "OnShape CAD", url: "https://cad.onshape.com/documents/f2823d606f50281ed95feaf6/w/f9ed0af4f276e511a5dd41fa/e/1d7fb63b33b3ae711826e788", icon: "fas fa-cube" }
         ]
@@ -139,7 +139,7 @@ const projectsData = [
         season: "24-25",
         country: "Moreno Valley, CA",
         description: " ",
-        tags: ["FTC", "Into the Deep", "Competition Ready"],
+        tags: ["Into the Deep"],
         links: [
             { text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/03dfa5ebab4f6179fdf0cd17/w/514335ceb8eced7fde7747f7/e/ef759f56c0a024601169fca2", icon: "fas fa-cube" }
         ]
@@ -153,7 +153,7 @@ const projectsData = [
         season: "20-21",
         country: "Saint-Petersberg, Russia",
         description: " ",
-        tags: ["FTC", "Ultimate Goal", "Creative Engineering"],
+        tags: ["Ultimate Goal"],
         links: [
             { text: "Fusion 360", url: "https://a360.co/4nbEtTq", icon: "fas fa-cube" }
         ]
@@ -167,7 +167,7 @@ const projectsData = [
         season: "20-21",
         country: "Saint-Petersberg, Russia",
         description: " ",
-        tags: ["FTC", "Ultimate Goal", "Innovative Design"],
+        tags: [ "Ultimate Goal"],
         links: [
             { text: "Fusion 360", url: "https://a360.co/4prEBjc", icon: "fas fa-cube" }
         ]
@@ -181,7 +181,7 @@ const projectsData = [
         season: "21-22",
         country: "Saint-Petersberg, Russia",
         description: " ",
-        tags: ["FTC", "Freight Frenzy", "Cargo Handling"],
+        tags: ["Freight Frenzy"],
         links: [
             { text: "Fusion 360", url: "https://a360.co/46py5ks", icon: "fas fa-cube" }
         ]
@@ -195,7 +195,7 @@ const projectsData = [
         season: "22-23",
         country: "Saint-Petersberg, Russia",
         description: " ",
-        tags: ["FTC", "Powerplay", "Power Systems"],
+        tags: ["Powerplay"],
         links: [
             { text: "Fusion 360", url: "https://a360.co/41UQUdI", icon: "fas fa-cube" }
         ]
@@ -209,7 +209,7 @@ const projectsData = [
         season: "24-25",
         country: "Saint-Petersberg, Russia",
         description: " ",
-        tags: ["FTC", "Into the deep", "Precision Mechanisms"],
+        tags: ["Into the deep"],
         links: [
             { text: "Fusion 360", url: "https://a360.co/3YGdFQV", icon: "fas fa-cube" }
         ]
@@ -225,7 +225,7 @@ const projectsData = [
          season: '21-22',
          country: 'Saint-Petersberg, Russia',
          description: '' ,
-         tags: ['FTC','21-22'],
+         tags: ['Freight Frenzy'],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/4n5Slyq',icon: 'fas fa-cube'}
                ]
@@ -239,7 +239,7 @@ const projectsData = [
          season: "22-23",
          country: 'Saint-Petersberg, Russia',
          description: ' ' ,
-         tags: ['FTC','22-23'],
+         tags: ["Powerplay"],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/3VOWA5w',icon: 'fas fa-cube'}
                ]
@@ -253,7 +253,7 @@ const projectsData = [
          season: '23-24',
          country: 'Saint-Petersberg, Russia',
          description: ' ' ,
-         tags: ['FTC','23-24'],
+         tags: ["Centerstage"],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/41WLbnJ',icon: 'fas fa-cube'}
                ]
@@ -267,7 +267,7 @@ const projectsData = [
          season: '23-24',
          country: 'Saint-Petersberg, Russia',
          description: ' ' ,
-         tags: ['FTC','23-24'],
+         tags: ["Centerstage"],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/3JZ2EpD',icon: 'fas fa-cube'}
                ]
@@ -295,7 +295,7 @@ const projectsData = [
          season: '24-25',
          country: 'Florida',
          description: ' ' ,
-         tags: ['FTC','24-25'],
+         tags: ["Into The Deep"],
         links: [
             { text: +'Onshape',url: 'https://cad.onshape.com/documents/50800014c627fcc9703ba6ca/w/6febbbc7c904e9c144bd69cf/e/98db84c0e55934036605f1c4?renderMode=0&uiState=68cca7700ae616be1f3a3790',icon: 'fas fa-cube'}
                ]
@@ -309,7 +309,7 @@ const projectsData = [
          season: '23-24',
          country: 'Illinois',
          description: ' ' ,
-         tags: ['FTC','23-24'],
+         tags: ["Centerstage"],
         links: [
             { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1djgmy-6gx8IAfvRVyzfnyhELNFy-Y1PH',icon: 'fas fa-cube'}
                ]
@@ -323,7 +323,7 @@ const projectsData = [
          season: '24-25',
          country: 'Illinois',
          description: ' ' ,
-         tags: ['FTC','24-25'],
+         tags: ["Into the Deep"],
         links: [
             { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1Jc2aDUr9MgoXgqtQy61NlD3kQQAGX1Ivv',icon: 'fas fa-cube'}
                ]
@@ -337,7 +337,7 @@ const projectsData = [
          season: '22-23',
          country: 'Illinois',
          description: ' ' ,
-         tags: ['FTC','22-23'],
+         tags: ["Powerplay"],
          links: [
             { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1YkzKEg-sL1i_bhEUy8mUvcaZLqrV_oW3',icon: 'fas fa-cube'}
                ]
@@ -352,7 +352,7 @@ const projectsData = [
          season: '24-25',
          country: 'Calgary, Alberta Canada',
          description: ' ' ,
-         tags: ['FTC','24-25'],
+         tags: ["Into The Deep"],
         links: [
             { text: +'Onshape',url: 'https://cad.onshape.com/documents/4570fcde98bc87019e040efe/w/17c558c3762d3579531fa58a/e/b353788416e51b54df81bc31?renderMode=0&uiState=68f05547ac6d63ee024cb879',icon: 'fas fa-cube'}
                ]
