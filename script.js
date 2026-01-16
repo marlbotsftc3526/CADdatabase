@@ -224,7 +224,7 @@ const projectsData = [
          program: 'FTC',
          season: '21-22',
          country: 'Saint-Petersberg, Russia',
-         Description: '' ,
+         description: '' ,
          tags: ['FTC','21-22'],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/4n5Slyq',icon: 'fas fa-cube'}
@@ -238,7 +238,7 @@ const projectsData = [
          program: 'FTC',
          season: "22-23",
          country: 'Saint-Petersberg, Russia',
-         Description: ' ' ,
+         description: ' ' ,
          tags: ['FTC','22-23'],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/3VOWA5w',icon: 'fas fa-cube'}
@@ -252,7 +252,7 @@ const projectsData = [
          program: 'FTC',
          season: '23-24',
          country: 'Saint-Petersberg, Russia',
-         Description: ' ' ,
+         description: ' ' ,
          tags: ['FTC','23-24'],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/41WLbnJ',icon: 'fas fa-cube'}
@@ -266,7 +266,7 @@ const projectsData = [
          program: 'FTC',
          season: '23-24',
          country: 'Saint-Petersberg, Russia',
-         Description: ' ' ,
+         description: ' ' ,
          tags: ['FTC','23-24'],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/3JZ2EpD',icon: 'fas fa-cube'}
@@ -280,7 +280,7 @@ const projectsData = [
          program: 'FTC',
          season: "24-25",
          country: 'Saint-Petersberg, Russia',
-         Description: ' .' ,
+         description: ' .' ,
          tags: ['FTC',"24-25"],
         links: [
             { text: +'Fusion 360',url: 'https://a360.co/46EhmuJ',icon: 'fas fa-cube'}
@@ -294,7 +294,7 @@ const projectsData = [
          program: 'FTC',
          season: '24-25',
          country: 'Florida',
-         Description: ' ' ,
+         description: ' ' ,
          tags: ['FTC','24-25'],
         links: [
             { text: +'Onshape',url: 'https://cad.onshape.com/documents/50800014c627fcc9703ba6ca/w/6febbbc7c904e9c144bd69cf/e/98db84c0e55934036605f1c4?renderMode=0&uiState=68cca7700ae616be1f3a3790',icon: 'fas fa-cube'}
@@ -308,7 +308,7 @@ const projectsData = [
          program: 'FTC',
          season: '23-24',
          country: 'Illinois',
-         Description: ' ' ,
+         description: ' ' ,
          tags: ['FTC','23-24'],
         links: [
             { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1djgmy-6gx8IAfvRVyzfnyhELNFy-Y1PH',icon: 'fas fa-cube'}
@@ -322,7 +322,7 @@ const projectsData = [
          program: 'FTC',
          season: '24-25',
          country: 'Illinois',
-         Description: ' ' ,
+         description: ' ' ,
          tags: ['FTC','24-25'],
         links: [
             { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1Jc2aDUr9MgoXgqtQy61NlD3kQQAGX1Ivv',icon: 'fas fa-cube'}
@@ -336,7 +336,7 @@ const projectsData = [
          program: 'FTC',
          season: '22-23',
          country: 'Illinois',
-         Description: ' ' ,
+         description: ' ' ,
          tags: ['FTC','22-23'],
          links: [
             { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1YkzKEg-sL1i_bhEUy8mUvcaZLqrV_oW3',icon: 'fas fa-cube'}
@@ -351,7 +351,7 @@ const projectsData = [
          program: 'FTC',
          season: '24-25',
          country: 'Calgary, Alberta Canada',
-         Description: ' .' ,
+         description: ' .' ,
          tags: ['FTC','24-25'],
         links: [
             { text: +'Onshape',url: 'https://cad.onshape.com/documents/4570fcde98bc87019e040efe/w/17c558c3762d3579531fa58a/e/b353788416e51b54df81bc31?renderMode=0&uiState=68f05547ac6d63ee024cb879',icon: 'fas fa-cube'}
