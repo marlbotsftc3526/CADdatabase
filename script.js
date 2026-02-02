@@ -1,10 +1,5 @@
-// Default/local projects data (fallback if Google Sheet fetch fails)
-const projectsData = [
 
-// Fix filter by season
-
-
-    function getOnshapeThumbnail(onshapeUrl) {
+function getOnshapeThumbnail(onshapeUrl) {
     // Onshape thumbnails typically follow this pattern
     if (onshapeUrl && onshapeUrl.includes('onshape.com')) {
         const docId = onshapeUrl.split('/documents/')[1]?.split('/')[0];
@@ -14,6 +9,11 @@ const projectsData = [
     }
     return PLACEHOLDER_THUMBNAIL;
 }
+
+// Default/local projects data (fallback if Google Sheet fetch fails)
+const projectsData = [
+
+// Fix filter by season
 
     {
         id: 1,
