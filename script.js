@@ -7,7 +7,7 @@ function getOnshapeThumbnail(onshapeUrl) {
             return `https://cad.onshape.com/api/thumbnails/d/${docId}/w/300/h/300`;
         }
     }
-    return PLACEHOLDER_THUMBNAIL;
+    return "https://www.pngegg.com/en/png-nossf";
 }
 
 // Default/local projects data (fallback if Google Sheet fetch fails)
