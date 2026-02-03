@@ -170,24 +170,24 @@ body {
 
 .hero-content {
     padding-left: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 4rem;
     position: relative;
     z-index: 2;
 }
 
+
 .hero-title {
-    animation: none;
     font-family: 'Orbitron', monospace;
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 1rem;
     line-height: 1.2;
-    position: relative + 20;
-   /* animation: titleGlow 3s ease-in-out infinite alternate;*/
+    position: relative;
 }
+   /* animation: titleGlow 3s ease-in-out infinite alternate;*/
 
 
 @keyframes titleGlow {
@@ -1318,21 +1318,6 @@ section {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-.submit-cad-container {
-  margin-top: 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.submit-cad-container a {
-  color: inherit; /* makes it use the surrounding text color */
-  text-decoration: underline;
-}
-
-.submit-cad-container a:hover {
-  text-decoration: none;
 }
 
 /*
