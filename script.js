@@ -766,15 +766,6 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
-
 // Add hover effects to cards
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.category-card, .team-member, .project-card');
