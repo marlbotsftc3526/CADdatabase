@@ -362,7 +362,118 @@ const projectsData = [
             { text: +'Onshape',url: 'https://cad.onshape.com/documents/4570fcde98bc87019e040efe/w/17c558c3762d3579531fa58a/e/b353788416e51b54df81bc31?renderMode=0&uiState=68f05547ac6d63ee024cb879',icon: 'fas fa-cube'}
                ]
 },
-    
+{
+     id: 26,
+     title: 'Into The Deep Robot',
+     teamName: 'Caesar Circuitry',
+     teamNumber: '24331',
+     program: 'FTC',
+     season: '24-25',
+     country: 'Huntsville, Alabama',
+     description: ' ' ,
+     tags: ["Into The Deep"],
+    links: [
+        { text: +'Onshape',url: 'cad.onshape.com/documents/cf533bb8c8240c95e41a2fee/w/2bb5a6848b6905cb05e5da11/e/d904bd552471b4afe760ec98',icon: 'fas fa-cube'}
+           ]
+},
+{
+     id: 27,
+     title: 'Into The Deep Robot',
+     teamName: 'UFORCE',
+     teamNumber: '23400',
+     program: 'FTC',
+     season: '24-25',
+     country: 'Dubai, DU, United Arab Emirates',
+     description: ' ' ,
+     tags: ["Into The Deep"],
+    links: [
+        { text: +'Onshape',url: 'cad.onshape.com/documents/cf533bb8c8240c95e41a2fee/w/2bb5a6848b6905cb05e5da11/e/d904bd552471b4afe760ec98',icon: 'fas fa-cube'}
+           ]
+},
+{
+     id: 28,
+     title: 'Into The Deep Robot',
+     teamName: 'PML30 North Wind',
+     teamNumber: '9746',
+     program: 'FTC',
+     season: '24-25',
+     country: 'St. Petersburg, Russia',
+     description: ' ' ,
+     tags: ["Into The Deep"],
+    links: [
+        { text: +'Onshape',url: 'cad.onshape.com/documents/e71101eaad919471b9efdb3c/w/c48921a11c5b7fdc33d7b7e5/e/703b9f8f90c51389619a4818',icon: 'fas fa-cube'}
+           ]
+},
+{
+     id: 29,
+     title: 'Centerstage Robot',
+     teamName: 'CyLiis',
+     teamNumber: '19043',
+     program: 'FTC',
+     season: '23-24',
+     country: 'Iași, Romania',
+     description: ' ' ,
+     tags: ["Centerstage"],
+    links: [
+        { text: +'Onshape',url: 'https://gmail2376016.autodesk360.com/g/shares/SH286ddQT78850c0d8a45d7c47fcb0ba09ef',icon: 'fas fa-cube'}
+           ]
+},
+{
+     id: 30,
+     title: 'Centerstage Robot',
+     teamName: 'hivemind',
+     teamNumber: '23396',
+     program: 'FTC',
+     season: '23-24',
+     country: 'Spring Hill, Tennessee',
+     description: ' ' ,
+     tags: ["Centerstage"],
+    links: [
+        { text: +'Onshape',url: 'cad.onshape.com/documents/fba422c04d9f259e36433b8c/w/661ed7aa8a40b6c0f5d26203/e/6205d0d7691937476f4d9a4c',icon: 'fas fa-cube'}
+           ]
+},
+{
+     id: 31,
+     title: 'Powerplay Robot',
+     teamName: 'Peppers',
+     teamNumber: '19044',
+     program: 'FTC',
+     season: '22-23',
+     country: 'Iași, Romania',
+     description: ' ' ,
+     tags: ["Powerplay"],
+    links: [
+        { text: +'Onshape',url: 'https://gmail1122897.autodesk360.com/g/shares/SH512d4QTec90decfa6efd936cae403c1bdf',icon: 'fas fa-cube'}
+           ]
+},
+{
+     id: 32,
+     title: 'Freight Frenzy Robot',
+     teamName: 'Almond Robotics',
+     teamNumber: '12518',
+     program: 'FTC',
+     season: '22-23',
+     country: 'Potomac, MD',
+     description: ' ' ,
+     tags: ["Freight Frenzy"],
+    links: [
+        { text: +'Onshape',url: 'cad.onshape.com/documents/ebe870041c6727c32e6a81e1/w/9e5b6fc4b42139b9df352731/e/ce77d17c2170332caa7262cc',icon: 'fas fa-cube'}
+           ]
+},
+    {
+    id: 33,
+     title: 'Decode Robot',
+     teamName: 'Tesla',
+     teamNumber: '17590',
+     program: 'FTC',
+     season: '22-23',
+     country: 'Siberia',
+     description: ' ' ,
+     tags: ["Decode"],
+    links: [
+        { text: +'Onshape',url: 'https://grabcad.com/library/ftc-tesla-17590-decode-siberian-qualifier-2026-1',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
+           ]
+},
 ];
 
 
