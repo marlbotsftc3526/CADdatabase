@@ -530,20 +530,6 @@ const projectsData = [
         { text: +'Onshape',url: 'https://myhub.autodesk360.com/ue2b699be/g/shares/SH56a43QTfd62c1cd968e7fc6e5b3808809c',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
            ]
 },
-    {
-    id: 38,
-     title: 'Rover Ruckus Robot',
-     teamName: 'Quantum Robotics',
-     teamNumber: '14270',
-     program: 'FTC',
-     season: '18-19',
-     country: 'Bucharest, Romania',
-     description: ' ' ,
-     tags: ["Rover Ruckus"],
-    links: [
-        { text: +'Onshape',url: 'https://myhub.autodesk360.com/ue2b699be/g/shares/SH56a43QTfd62c1cd968e7fc6e5b3808809c',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
 ];
 
 
