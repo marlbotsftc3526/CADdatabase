@@ -530,6 +530,90 @@ const projectsData = [
         { text: +'Onshape',url: 'https://myhub.autodesk360.com/ue2b699be/g/shares/SH56a43QTfd62c1cd968e7fc6e5b3808809c',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
            ]
 },
+    {
+    id: 38,
+     title: 'Into The Deep Robot',
+     teamName: 'Robo Kai',
+     teamNumber: '17978',
+     program: 'FTC',
+     season: '24-25',
+     country: 'Ohio',
+     description: ' ' ,
+     tags: ["Into the Deep"],
+    links: [
+        { text: +'Google Drive',url: 'https://drive.google.com/drive/folders/1gxJu5C4J5Z56zXodPUi-OxYn7YO8IOp9',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
+           ]
+},
+    {
+    id: 39,
+     title: 'Into The Deep Robot',
+     teamName: 'Red Ring of Death',
+     teamNumber: '22581',
+     program: 'FTC',
+     season: '24-25',
+     country: 'Kennesaw, Georgia',
+     description: ' ' ,
+     tags: ["Into the Deep"],
+    links: [
+        { text: +'Onshape',url: 'https://cad.onshape.com/documents/37697f9e12c866601bb956d1/w/64bdcd69584e980a5359bec1/e/a254c83e3ab71d0f5b71068f?renderMode=0&uiState=67ba934697a9ca50fe2efc36',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
+           ]
+},
+    {
+    id: 40,
+     title: 'Into The Deep Robot',
+     teamName: 'Seattle Solvers',
+     teamNumber: '23511',
+     program: 'FTC',
+     season: '24-25',
+     country: 'Sammamish, Washington',
+     description: ' ' ,
+     tags: ["Into the Deep"],
+    links: [
+        { text: +'Onshape',url: 'https://cad.onshape.com/documents/ae5ff79658ff2a51ece82558/w/1babafd80652d7e5216f214c/e/548f3b6bbedc29b9264b1a15',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
+           ]
+},
+    {
+    id: 41,
+     title: 'Into The Deep Robot',
+     teamName: 'FRITS',
+     teamNumber: '25209',
+     program: 'FTC',
+     season: '24-25',
+     country: 'Hà Nội, HN, Vietnam',
+     description: ' ' ,
+     tags: ["Into the Deep"],
+    links: [
+        { text: +'Onshape',url: 'https://cad.onshape.com/documents/d66e428ea5bdfea5f78e1178/w/ea2c9af518345c418296094f/e/b2b467b7be8b145c6aa6992e',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
+           ]
+},
+    {
+    id: 42,
+     title: 'Into The Deep Robot',
+     teamName: 'Wolves Robotics',
+     teamNumber: '5189',
+     program: 'FTC',
+     season: '24-25',
+     country: 'San Antonio, Texas,',
+     description: ' ' ,
+     tags: ["Into the Deep"],
+    links: [
+        { text: +'Onshape',url: 'https://cad.onshape.com/documents/8b9c71ef444b0ca656b77248/w/6408dc3be6975f56ecf4b94c/e/6fd499479be35b74682dfd6f',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
+           ]
+},
+    {
+    id: 43,
+     title: 'Into The Deep Robot',
+     teamName: 'Quixilver',
+     teamNumber: '8404',
+     program: 'FTC',
+     season: '24-25',
+     country: 'San Jose, California,',
+     description: ' ' ,
+     tags: ["Into the Deep"],
+    links: [
+        { text: +'Onshape',url: 'https://cad.onshape.com/documents/84457a80136c5bcb36868f22/w/ce1629cfbf3e919954057377/e/11830431fc76c4a9509a3bce?renderMode=0&uiState=67ba94de4bbffc2d298d0adf',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
+           ]
+},
 ];
 
 
