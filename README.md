@@ -1,3 +1,24 @@
+For Marlbots - how do I update this thing?
+
+Once you have these things:
+- Team name
+- Team number
+- Season
+- program (FTC or FRC)
+- season
+- country
+- description (always just do " ")
+- tags (put season)
+- Onshape URL
+
+
+Go into the Script.js file
+Copy and paste one of the previous submissions from bracket to bracket
+Change all the information to match, including incrimenting the id # and title
+
+
+
+
 # Marlbots CAD Database
 
 A modern, responsive website for the Marlbots robotics team showcasing computer-aided design examples and educational content. Accessible at **marlbotscaddatabase.com**.
