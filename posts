@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with FTC CAD</title>
+
+```
+<link rel="stylesheet" href="../styles.css">
+```
+
+</head>
+
+<body>
+
+<section class="projects">
+    <div class="container">
+
+```
+    <a href="../blog.html" class="btn btn-secondary">
+        ← Back to Blog
+    </a>
+
+    <br><br>
+
+    <h1>Getting Started with FTC CAD</h1>
+
+    <p><strong>Published:</strong> June 2026</p>
+
+    <p>
+        CAD is one of the most valuable skills in FTC.
+        It allows teams to prototype, test, and improve
+        designs before manufacturing parts.
+    </p>
+
+    <h2>Step 1: Learn Sketching</h2>
+
+    <p>
+        Start by mastering sketches and constraints.
+        These form the foundation of every CAD model.
+    </p>
+
+    <h2>Step 2: Build Simple Parts</h2>
+
+    <p>
+        Create brackets, plates, and spacers before
+        moving into full robot assemblies.
+    </p>
+
+    <h2>Step 3: Assemble Components</h2>
+
+    <p>
+        Practice using mates and assemblies to build
+        complete mechanisms.
+    </p>
+
+</div>
+```
+
+</section>
+
+</body>
+</html>
