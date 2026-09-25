@@ -615,6 +615,19 @@ const projectsData = [
         links: [
             { text: 'Google Drive', url: 'https://drive.google.com/file/d/1a-VhdKkHIDGIoJ3HzPVR9U0VI04-S-uD/view', icon: 'fas fa-cube' }
         ]
+    },   
+    {
+          id: 45,
+        title: 'Decode Robot',
+        teamName: 'Cotiere Robotics',
+        teamNumber: '25012',
+        program: 'FTC',
+        season: '25-26',
+        country: 'France',
+        description: ' ',
+        tags: ["Into the Deep"],
+        links: [
+            { text: 'Google Drive', url: 'https://drive.google.com/file/d/1DvmzXrwTwdSR4s2S0yO9oNmaqk0oBaFA/view', icon: 'fas fa-cube' }
     }
 ];
 
