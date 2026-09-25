@@ -614,6 +614,7 @@ const projectsData = [
         { text: +'Onshape',url: 'https://cad.onshape.com/documents/84457a80136c5bcb36868f22/w/ce1629cfbf3e919954057377/e/11830431fc76c4a9509a3bce?renderMode=0&uiState=67ba94de4bbffc2d298d0adf',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
            ]
 },
+      {
     id: 44,
      title: 'Into The Deep Robot',
      teamName: 'Cotiere Robotics',
