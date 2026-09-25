@@ -614,6 +614,18 @@ const projectsData = [
         { text: +'Onshape',url: 'https://cad.onshape.com/documents/84457a80136c5bcb36868f22/w/ce1629cfbf3e919954057377/e/11830431fc76c4a9509a3bce?renderMode=0&uiState=67ba94de4bbffc2d298d0adf',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
            ]
 },
+     id: 44,
+     title: 'Into The Deep Robot',
+     teamName: 'Cotiere Robotics',
+     teamNumber: '25012',
+     program: 'FTC',
+     season: '24-25',
+     country: 'France',
+     description: ' ' ,
+     tags: ["Into the Deep"],
+    links: [
+        { text: +'Onshape',url: 'https://drive.google.com/file/d/1a-VhdKkHIDGIoJ3HzPVR9U0VI04-S-uD/view',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
+           ]
 ];
 
 
