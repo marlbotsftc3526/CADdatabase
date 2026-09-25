@@ -624,7 +624,7 @@ const projectsData = [
      description: ' ' ,
      tags: ["Into the Deep"],
     links: [
-        { text: +'Onshape',url: 'https://drive.google.com/file/d/1a-VhdKkHIDGIoJ3HzPVR9U0VI04-S-uD/view',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
+        { text: +'Google Drive',url: 'https://drive.google.com/file/d/1a-VhdKkHIDGIoJ3HzPVR9U0VI04-S-uD/view',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
            ]
 ];
 
