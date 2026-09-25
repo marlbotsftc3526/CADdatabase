@@ -11,7 +11,7 @@ const projectsData = [
         description: '',
         tags: ["Into the Deep"],
         links: [
-            {text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/e572c65123251ef45b66f39e/w/f34b2f76e28714ad4e8fabda/e/53a251850136ccbe839f52d5?renderMode=0&uiState=68487e49a0494d1fc0b81a6f"}
+            { text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/e572c65123251ef45b66f39e/w/f34b2f76e28714ad4e8fabda/e/53a251850136ccbe839f52d5?renderMode=0&uiState=68487e49a0494d1fc0b81a6f" }
         ]
     },
     {
@@ -617,7 +617,7 @@ const projectsData = [
         ]
     },   
     {
-          id: 45,
+        id: 45,
         title: 'Decode Robot',
         teamName: 'Cotiere Robotics',
         teamNumber: '25012',
@@ -628,6 +628,7 @@ const projectsData = [
         tags: ["Into the Deep"],
         links: [
             { text: 'Google Drive', url: 'https://drive.google.com/file/d/1DvmzXrwTwdSR4s2S0yO9oNmaqk0oBaFA/view', icon: 'fas fa-cube' }
+        ]
     }
 ];
 
