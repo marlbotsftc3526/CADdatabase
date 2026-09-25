@@ -1,11 +1,5 @@
-
-
-
 // Default/local projects data (fallback if Google Sheet fetch fails)
 const projectsData = [
-
-// Fix filter by season
-
     {
         id: 1,
         title: "Into the Deep Robot",
@@ -18,9 +12,7 @@ const projectsData = [
         tags: ["Into the Deep"],
         links: [
             {text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/e572c65123251ef45b66f39e/w/f34b2f76e28714ad4e8fabda/e/53a251850136ccbe839f52d5?renderMode=0&uiState=68487e49a0494d1fc0b81a6f"}
-        ],
-        //thumbnail: "data:image/png;base64,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"
-        //thumbnail: "CAD9.jpg"
+        ]
     },
     {
         id: 2,
@@ -35,7 +27,6 @@ const projectsData = [
         links: [
             { text: "OnShape CAD", url: "https://marlborough.onshape.com/documents/e90c60b27e433977608b9152/w/59237bb6890d87eb1fd8994c/e/752f3b7b2968df845d6e46fe?renderMode=0&uiState=68488124e97b2d1c16e4f9d9", icon: "fas fa-cube" }
         ]
-        
     },
     {
         id: 3,
@@ -88,7 +79,7 @@ const projectsData = [
         season: "24-25",
         country: "Kazakhstan",
         description: " ",
-        tags: [ "Into the Deep"],
+        tags: ["Into the Deep"],
         links: [
             { text: "Google Drive", url: "https://drive.google.com/file/d/1o1S0sibZfOB8pSwWLc75GxJvxh2aKdH4/view?usp=sharing", icon: "fab fa-google-drive" }
         ]
@@ -172,7 +163,7 @@ const projectsData = [
         season: "20-21",
         country: "Saint-Petersberg, Russia",
         description: " ",
-        tags: [ "Ultimate Goal"],
+        tags: ["Ultimate Goal"],
         links: [
             { text: "Fusion 360", url: "https://a360.co/4prEBjc", icon: "fas fa-cube" }
         ]
@@ -218,429 +209,423 @@ const projectsData = [
         links: [
             { text: "Fusion 360", url: "https://a360.co/3YGdFQV", icon: "fas fa-cube" }
         ]
-        
     },
-
     {
-         id: 16,
-         title: 'Freight Frenzy Robot',
-         teamName: 'Workshop of Eternal Nonsense',
-         teamNumber: '17517',
-         program: 'FTC',
-         season: '21-22',
-         country: 'Saint-Petersberg, Russia',
-         description: '' ,
-         tags: ['Freight Frenzy'],
+        id: 16,
+        title: 'Freight Frenzy Robot',
+        teamName: 'Workshop of Eternal Nonsense',
+        teamNumber: '17517',
+        program: 'FTC',
+        season: '21-22',
+        country: 'Saint-Petersberg, Russia',
+        description: '',
+        tags: ['Freight Frenzy'],
         links: [
-            { text: +'Fusion 360',url: 'https://a360.co/4n5Slyq',icon: 'fas fa-cube'}
-               ]
-},
-{
-         id: 17,
-         title: 'Powerplay Robot',
-         teamName: 'Workshop of Eternal Nonsense',
-         teamNumber: '17517',
-         program: 'FTC',
-         season: "22-23",
-         country: 'Saint-Petersberg, Russia',
-         description: ' ' ,
-         tags: ["Powerplay"],
+            { text: 'Fusion 360', url: 'https://a360.co/4n5Slyq', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 17,
+        title: 'Powerplay Robot',
+        teamName: 'Workshop of Eternal Nonsense',
+        teamNumber: '17517',
+        program: 'FTC',
+        season: "22-23",
+        country: 'Saint-Petersberg, Russia',
+        description: ' ',
+        tags: ["Powerplay"],
         links: [
-            { text: +'Fusion 360',url: 'https://a360.co/3VOWA5w',icon: 'fas fa-cube'}
-               ]
-},
-{
-         id: 18,
-         title: 'Centerstage Robot',
-         teamName: 'Workshop of Eternal Nonsense',
-         teamNumber: '17517',
-         program: 'FTC',
-         season: '23-24',
-         country: 'Saint-Petersberg, Russia',
-         description: ' ' ,
-         tags: ["Centerstage"],
+            { text: 'Fusion 360', url: 'https://a360.co/3VOWA5w', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 18,
+        title: 'Centerstage Robot',
+        teamName: 'Workshop of Eternal Nonsense',
+        teamNumber: '17517',
+        program: 'FTC',
+        season: '23-24',
+        country: 'Saint-Petersberg, Russia',
+        description: ' ',
+        tags: ["Centerstage"],
         links: [
-            { text: +'Fusion 360',url: 'https://a360.co/41WLbnJ',icon: 'fas fa-cube'}
-               ]
-},
-{
-         id: 19,
-         title: 'Centerstage Robot',
-         teamName: 'Aperture in Reasons',
-         teamNumber: '18742',
-         program: 'FTC',
-         season: '23-24',
-         country: 'Saint-Petersberg, Russia',
-         description: ' ' ,
-         tags: ["Centerstage"],
+            { text: 'Fusion 360', url: 'https://a360.co/41WLbnJ', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 19,
+        title: 'Centerstage Robot',
+        teamName: 'Aperture in Reasons',
+        teamNumber: '18742',
+        program: 'FTC',
+        season: '23-24',
+        country: 'Saint-Petersberg, Russia',
+        description: ' ',
+        tags: ["Centerstage"],
         links: [
-            { text: +'Fusion 360',url: 'https://a360.co/3JZ2EpD',icon: 'fas fa-cube'}
-               ]
-},
-{
-         id: 20,
-         title: 'Into the Deep Robot',
-         teamName: 'Workshop of Eternal Nonsense',
-         teamNumber: '17517',
-         program: 'FTC',
-         season: "24-25",
-         country: 'Saint-Petersberg, Russia',
-         description: ' ' ,
-         tags: ['FTC',"24-25"],
+            { text: 'Fusion 360', url: 'https://a360.co/3JZ2EpD', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 20,
+        title: 'Into the Deep Robot',
+        teamName: 'Workshop of Eternal Nonsense',
+        teamNumber: '17517',
+        program: 'FTC',
+        season: "24-25",
+        country: 'Saint-Petersberg, Russia',
+        description: ' ',
+        tags: ['FTC', "24-25"],
         links: [
-            { text: +'Fusion 360',url: 'https://a360.co/46EhmuJ',icon: 'fas fa-cube'}
-               ]
-},
-{
-         id: 21,
-         title: 'Into the Deep Robot',
-         teamName: 'Jedison Knights',
-         teamNumber: '23571',
-         program: 'FTC',
-         season: '24-25',
-         country: 'Florida',
-         description: ' ' ,
-         tags: ["Into The Deep"],
+            { text: 'Fusion 360', url: 'https://a360.co/46EhmuJ', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 21,
+        title: 'Into the Deep Robot',
+        teamName: 'Jedison Knights',
+        teamNumber: '23571',
+        program: 'FTC',
+        season: '24-25',
+        country: 'Florida',
+        description: ' ',
+        tags: ["Into The Deep"],
         links: [
-            { text: +'Onshape',url: 'https://cad.onshape.com/documents/50800014c627fcc9703ba6ca/w/6febbbc7c904e9c144bd69cf/e/98db84c0e55934036605f1c4?renderMode=0&uiState=68cca7700ae616be1f3a3790',icon: 'fas fa-cube'}
-               ]
-},
-{
-         id: 22,
-         title: 'Centerstage Robot',
-         teamName: 'Despicable Machine',
-         teamNumber: '6200',
-         program: 'FTC',
-         season: '23-24',
-         country: 'Illinois',
-         description: ' ' ,
-         tags: ["Centerstage"],
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/50800014c627fcc9703ba6ca/w/6febbbc7c904e9c144bd69cf/e/98db84c0e55934036605f1c4?renderMode=0&uiState=68cca7700ae616be1f3a3790', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 22,
+        title: 'Centerstage Robot',
+        teamName: 'Despicable Machine',
+        teamNumber: '6200',
+        program: 'FTC',
+        season: '23-24',
+        country: 'Illinois',
+        description: ' ',
+        tags: ["Centerstage"],
         links: [
-            { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1djgmy-6gx8IAfvRVyzfnyhELNFy-Y1PH',icon: 'fas fa-cube'}
-               ]
-},
+            { text: 'Google Drive', url: 'https://drive.google.com/drive/folders/1djgmy-6gx8IAfvRVyzfnyhELNFy-Y1PH', icon: 'fas fa-cube' }
+        ]
+    },
     {
-         id: 23,
-         title: 'Into the Deep Robot',
-         teamName: 'Despicable Machine',
-         teamNumber: '6200',
-         program: 'FTC',
-         season: '24-25',
-         country: 'Illinois',
-         description: ' ' ,
-         tags: ["Into the Deep"],
+        id: 23,
+        title: 'Into the Deep Robot',
+        teamName: 'Despicable Machine',
+        teamNumber: '6200',
+        program: 'FTC',
+        season: '24-25',
+        country: 'Illinois',
+        description: ' ',
+        tags: ["Into the Deep"],
         links: [
-            { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1Jc2aDUr9MgoXgqtQy61NlD3kQQAGX1Ivv',icon: 'fas fa-cube'}
-               ]
-},
-{
-         id: 24,
-         title: 'Powerplay Robot',
-         teamName: 'Despicable Machine',
-         teamNumber: '200',
-         program: 'FTC',
-         season: '22-23',
-         country: 'Illinois',
-         description: ' ' ,
-         tags: ["Powerplay"],
-         links: [
-            { text: +'Onshape',url: 'https://drive.google.com/drive/folders/1YkzKEg-sL1i_bhEUy8mUvcaZLqrV_oW3',icon: 'fas fa-cube'}
-               ]
-},
-
-{
-         id: 25,
-         title: 'Into The Deep Robot',
-         teamName: 'Crazy Artificial Intelligence',
-         teamNumber: '16596',
-         program: 'FTC',
-         season: '24-25',
-         country: 'Calgary, Alberta Canada',
-         description: ' ' ,
-         tags: ["Into The Deep"],
+            { text: 'Google Drive', url: 'https://drive.google.com/drive/folders/1Jc2aDUr9MgoXgqtQy61NlD3kQQAGX1Ivv', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 24,
+        title: 'Powerplay Robot',
+        teamName: 'Despicable Machine',
+        teamNumber: '200',
+        program: 'FTC',
+        season: '22-23',
+        country: 'Illinois',
+        description: ' ',
+        tags: ["Powerplay"],
         links: [
-            { text: +'Onshape',url: 'https://cad.onshape.com/documents/4570fcde98bc87019e040efe/w/17c558c3762d3579531fa58a/e/b353788416e51b54df81bc31?renderMode=0&uiState=68f05547ac6d63ee024cb879',icon: 'fas fa-cube'}
-               ]
-},
-{
-     id: 26,
-     title: 'Into The Deep Robot',
-     teamName: 'Caesar Circuitry',
-     teamNumber: '24331',
-     program: 'FTC',
-     season: '24-25',
-     country: 'Huntsville, Alabama',
-     description: ' ' ,
-     tags: ["Into The Deep"],
-    links: [
-        { text: +'Onshape',url: 'cad.onshape.com/documents/cf533bb8c8240c95e41a2fee/w/2bb5a6848b6905cb05e5da11/e/d904bd552471b4afe760ec98',icon: 'fas fa-cube'}
-           ]
-},
-{
-     id: 27,
-     title: 'Into The Deep Robot',
-     teamName: 'UFORCE',
-     teamNumber: '23400',
-     program: 'FTC',
-     season: '24-25',
-     country: 'Dubai, DU, United Arab Emirates',
-     description: ' ' ,
-     tags: ["Into The Deep"],
-    links: [
-        { text: +'Onshape',url: 'cad.onshape.com/documents/cf533bb8c8240c95e41a2fee/w/2bb5a6848b6905cb05e5da11/e/d904bd552471b4afe760ec98',icon: 'fas fa-cube'}
-           ]
-},
-{
-     id: 28,
-     title: 'Into The Deep Robot',
-     teamName: 'PML30 North Wind',
-     teamNumber: '9746',
-     program: 'FTC',
-     season: '24-25',
-     country: 'St. Petersburg, Russia',
-     description: ' ' ,
-     tags: ["Into The Deep"],
-    links: [
-        { text: +'Onshape',url: 'cad.onshape.com/documents/e71101eaad919471b9efdb3c/w/c48921a11c5b7fdc33d7b7e5/e/703b9f8f90c51389619a4818',icon: 'fas fa-cube'}
-           ]
-},
-{
-     id: 29,
-     title: 'Centerstage Robot',
-     teamName: 'CyLiis',
-     teamNumber: '19043',
-     program: 'FTC',
-     season: '23-24',
-     country: 'Iași, Romania',
-     description: ' ' ,
-     tags: ["Centerstage"],
-    links: [
-        { text: +'Onshape',url: 'https://gmail2376016.autodesk360.com/g/shares/SH286ddQT78850c0d8a45d7c47fcb0ba09ef',icon: 'fas fa-cube'}
-           ]
-},
-{
-     id: 30,
-     title: 'Centerstage Robot',
-     teamName: 'hivemind',
-     teamNumber: '23396',
-     program: 'FTC',
-     season: '23-24',
-     country: 'Spring Hill, Tennessee',
-     description: ' ' ,
-     tags: ["Centerstage"],
-    links: [
-        { text: +'Onshape',url: 'cad.onshape.com/documents/fba422c04d9f259e36433b8c/w/661ed7aa8a40b6c0f5d26203/e/6205d0d7691937476f4d9a4c',icon: 'fas fa-cube'}
-           ]
-},
-{
-     id: 31,
-     title: 'Powerplay Robot',
-     teamName: 'Peppers',
-     teamNumber: '19044',
-     program: 'FTC',
-     season: '22-23',
-     country: 'Iași, Romania',
-     description: ' ' ,
-     tags: ["Powerplay"],
-    links: [
-        { text: +'Onshape',url: 'https://gmail1122897.autodesk360.com/g/shares/SH512d4QTec90decfa6efd936cae403c1bdf',icon: 'fas fa-cube'}
-           ]
-},
-{
-     id: 32,
-     title: 'Freight Frenzy Robot',
-     teamName: 'Almond Robotics',
-     teamNumber: '12518',
-     program: 'FTC',
-     season: '22-23',
-     country: 'Potomac, MD',
-     description: ' ' ,
-     tags: ["Freight Frenzy"],
-    links: [
-        { text: +'Onshape',url: 'cad.onshape.com/documents/ebe870041c6727c32e6a81e1/w/9e5b6fc4b42139b9df352731/e/ce77d17c2170332caa7262cc',icon: 'fas fa-cube'}
-           ]
-},
+            { text: 'Google Drive', url: 'https://drive.google.com/drive/folders/1YkzKEg-sL1i_bhEUy8mUvcaZLqrV_oW3', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 33,
-     title: 'Ultimate Goal Robot',
-     teamName: 'Jankbot',
-     teamNumber: '13648',
-     program: 'FTC',
-     season: '20-21',
-     country: 'Duvall, Washington',
-     description: ' ' ,
-     tags: ["Ultimate Goal"],
-    links: [
-        { text: +'Onshape',url: 'https://cad.onshape.com/documents/ec03c5a1726117b5dd0ef434/v/26fc62a203f44bf75b45a13d/e/863dc892f987c32991536897',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
+        id: 25,
+        title: 'Into The Deep Robot',
+        teamName: 'Crazy Artificial Intelligence',
+        teamNumber: '16596',
+        program: 'FTC',
+        season: '24-25',
+        country: 'Calgary, Alberta Canada',
+        description: ' ',
+        tags: ["Into The Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/4570fcde98bc87019e040efe/w/17c558c3762d3579531fa58a/e/b353788416e51b54df81bc31?renderMode=0&uiState=68f05547ac6d63ee024cb879', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 34,
-     title: 'Ultimate Goal Robot',
-     teamName: 'Beach Bots',
-     teamNumber: '18253',
-     program: 'FTC',
-     season: '20-21',
-     country: 'Santa Monica, California',
-     description: ' ' ,
-     tags: ["Ultimate Goal"],
-    links: [
-        { text: +'Onshape',url: 'https://cad.onshape.com/documents/c4258a3b5a1dbcdad41e21f5/w/4f7810069e9b16a173d2bf0a/e/f837c09187d1cca462aaeca2',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
+        id: 26,
+        title: 'Into The Deep Robot',
+        teamName: 'Caesar Circuitry',
+        teamNumber: '24331',
+        program: 'FTC',
+        season: '24-25',
+        country: 'Huntsville, Alabama',
+        description: ' ',
+        tags: ["Into The Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/cf533bb8c8240c95e41a2fee/w/2bb5a6848b6905cb05e5da11/e/d904bd552471b4afe760ec98', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 35,
-     title: 'Skystone Robot',
-     teamName: 'Quantum Robotics',
-     teamNumber: '14270',
-     program: 'FTC',
-     season: '19-20',
-     country: 'Bucharest, Romania',
-     description: ' ' ,
-     tags: ["Skystone"],
-    links: [
-        { text: +'Onshape',url: 'https://myhub.autodesk360.com/ue2b699be/g/shares/SH56a43QTfd62c1cd968c54efb8b6d65921b',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
+        id: 27,
+        title: 'Into The Deep Robot',
+        teamName: 'UFORCE',
+        teamNumber: '23400',
+        program: 'FTC',
+        season: '24-25',
+        country: 'Dubai, DU, United Arab Emirates',
+        description: ' ',
+        tags: ["Into The Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/cf533bb8c8240c95e41a2fee/w/2bb5a6848b6905cb05e5da11/e/d904bd552471b4afe760ec98', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 36,
-     title: 'Rover Ruckus Robot',
-     teamName: '(In)Formal Logic',
-     teamNumber: '9872',
-     program: 'FTC',
-     season: '18-19',
-     country: 'Harrisburg, Pennsylvania',
-     description: ' ' ,
-     tags: ["Rover Ruckus"],
-    links: [
-        { text: +'Onshape',url: 'https://myhub.autodesk360.com/ue2814ea3/g/shares/SH56a43QTfd62c1cd968250c04221a0d6400',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
+        id: 28,
+        title: 'Into The Deep Robot',
+        teamName: 'PML30 North Wind',
+        teamNumber: '9746',
+        program: 'FTC',
+        season: '24-25',
+        country: 'St. Petersburg, Russia',
+        description: ' ',
+        tags: ["Into The Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/e71101eaad919471b9efdb3c/w/c48921a11c5b7fdc33d7b7e5/e/703b9f8f90c51389619a4818', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 37,
-     title: 'Rover Ruckus Robot',
-     teamName: 'Quantum Robotics',
-     teamNumber: '14270',
-     program: 'FTC',
-     season: '18-19',
-     country: 'Bucharest, Romania',
-     description: ' ' ,
-     tags: ["Rover Ruckus"],
-    links: [
-        { text: +'Onshape',url: 'https://myhub.autodesk360.com/ue2b699be/g/shares/SH56a43QTfd62c1cd968e7fc6e5b3808809c',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
+        id: 29,
+        title: 'Centerstage Robot',
+        teamName: 'CyLiis',
+        teamNumber: '19043',
+        program: 'FTC',
+        season: '23-24',
+        country: 'Iași, Romania',
+        description: ' ',
+        tags: ["Centerstage"],
+        links: [
+            { text: 'Fusion 360', url: 'https://gmail2376016.autodesk360.com/g/shares/SH286ddQT78850c0d8a45d7c47fcb0ba09ef', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 38,
-     title: 'Into The Deep Robot',
-     teamName: 'Robo Kai',
-     teamNumber: '17978',
-     program: 'FTC',
-     season: '24-25',
-     country: 'Ohio',
-     description: ' ' ,
-     tags: ["Into the Deep"],
-    links: [
-        { text: +'Google Drive',url: 'https://drive.google.com/drive/folders/1gxJu5C4J5Z56zXodPUi-OxYn7YO8IOp9',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
+        id: 30,
+        title: 'Centerstage Robot',
+        teamName: 'hivemind',
+        teamNumber: '23396',
+        program: 'FTC',
+        season: '23-24',
+        country: 'Spring Hill, Tennessee',
+        description: ' ',
+        tags: ["Centerstage"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/fba422c04d9f259e36433b8c/w/661ed7aa8a40b6c0f5d26203/e/6205d0d7691937476f4d9a4c', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 39,
-     title: 'Into The Deep Robot',
-     teamName: 'Red Ring of Death',
-     teamNumber: '22581',
-     program: 'FTC',
-     season: '24-25',
-     country: 'Kennesaw, Georgia',
-     description: ' ' ,
-     tags: ["Into the Deep"],
-    links: [
-        { text: +'Onshape',url: 'https://cad.onshape.com/documents/37697f9e12c866601bb956d1/w/64bdcd69584e980a5359bec1/e/a254c83e3ab71d0f5b71068f?renderMode=0&uiState=67ba934697a9ca50fe2efc36',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
+        id: 31,
+        title: 'Powerplay Robot',
+        teamName: 'Peppers',
+        teamNumber: '19044',
+        program: 'FTC',
+        season: '22-23',
+        country: 'Iași, Romania',
+        description: ' ',
+        tags: ["Powerplay"],
+        links: [
+            { text: 'Fusion 360', url: 'https://gmail1122897.autodesk360.com/g/shares/SH512d4QTec90decfa6efd936cae403c1bdf', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 40,
-     title: 'Into The Deep Robot',
-     teamName: 'Seattle Solvers',
-     teamNumber: '23511',
-     program: 'FTC',
-     season: '24-25',
-     country: 'Sammamish, Washington',
-     description: ' ' ,
-     tags: ["Into the Deep"],
-    links: [
-        { text: +'Onshape',url: 'https://cad.onshape.com/documents/ae5ff79658ff2a51ece82558/w/1babafd80652d7e5216f214c/e/548f3b6bbedc29b9264b1a15',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
+        id: 32,
+        title: 'Freight Frenzy Robot',
+        teamName: 'Almond Robotics',
+        teamNumber: '12518',
+        program: 'FTC',
+        season: '22-23',
+        country: 'Potomac, MD',
+        description: ' ',
+        tags: ["Freight Frenzy"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/ebe870041c6727c32e6a81e1/w/9e5b6fc4b42139b9df352731/e/ce77d17c2170332caa7262cc', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 41,
-     title: 'Into The Deep Robot',
-     teamName: 'FRITS',
-     teamNumber: '25209',
-     program: 'FTC',
-     season: '24-25',
-     country: 'Hà Nội, HN, Vietnam',
-     description: ' ' ,
-     tags: ["Into the Deep"],
-    links: [
-        { text: +'Onshape',url: 'https://cad.onshape.com/documents/d66e428ea5bdfea5f78e1178/w/ea2c9af518345c418296094f/e/b2b467b7be8b145c6aa6992e',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
+        id: 33,
+        title: 'Ultimate Goal Robot',
+        teamName: 'Jankbot',
+        teamNumber: '13648',
+        program: 'FTC',
+        season: '20-21',
+        country: 'Duvall, Washington',
+        description: ' ',
+        tags: ["Ultimate Goal"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/ec03c5a1726117b5dd0ef434/v/26fc62a203f44bf75b45a13d/e/863dc892f987c32991536897', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 42,
-     title: 'Into The Deep Robot',
-     teamName: 'Wolves Robotics',
-     teamNumber: '5189',
-     program: 'FTC',
-     season: '24-25',
-     country: 'San Antonio, Texas,',
-     description: ' ' ,
-     tags: ["Into the Deep"],
-    links: [
-        { text: +'Onshape',url: 'https://cad.onshape.com/documents/8b9c71ef444b0ca656b77248/w/6408dc3be6975f56ecf4b94c/e/6fd499479be35b74682dfd6f',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
+        id: 34,
+        title: 'Ultimate Goal Robot',
+        teamName: 'Beach Bots',
+        teamNumber: '18253',
+        program: 'FTC',
+        season: '20-21',
+        country: 'Santa Monica, California',
+        description: ' ',
+        tags: ["Ultimate Goal"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/c4258a3b5a1dbcdad41e21f5/w/4f7810069e9b16a173d2bf0a/e/f837c09187d1cca462aaeca2', icon: 'fas fa-cube' }
+        ]
+    },
     {
-    id: 43,
-     title: 'Into The Deep Robot',
-     teamName: 'Quixilver',
-     teamNumber: '8404',
-     program: 'FTC',
-     season: '24-25',
-     country: 'San Jose, California,',
-     description: ' ' ,
-     tags: ["Into the Deep"],
-    links: [
-        { text: +'Onshape',url: 'https://cad.onshape.com/documents/84457a80136c5bcb36868f22/w/ce1629cfbf3e919954057377/e/11830431fc76c4a9509a3bce?renderMode=0&uiState=67ba94de4bbffc2d298d0adf',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
-},
-      {
-    id: 44,
-     title: 'Into The Deep Robot',
-     teamName: 'Cotiere Robotics',
-     teamNumber: '25012',
-     program: 'FTC',
-     season: '24-25',
-     country: 'France',
-     description: ' ' ,
-     tags: ["Into the Deep"],
-    links: [
-        { text: +'Google Drive',url: 'https://drive.google.com/file/d/1a-VhdKkHIDGIoJ3HzPVR9U0VI04-S-uD/view',icon: 'fas fa-cube'} // url is from grabcad, a little not what we want
-           ]
+        id: 35,
+        title: 'Skystone Robot',
+        teamName: 'Quantum Robotics',
+        teamNumber: '14270',
+        program: 'FTC',
+        season: '19-20',
+        country: 'Bucharest, Romania',
+        description: ' ',
+        tags: ["Skystone"],
+        links: [
+            { text: 'Fusion 360', url: 'https://myhub.autodesk360.com/ue2b699be/g/shares/SH56a43QTfd62c1cd968c54efb8b6d65921b', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 36,
+        title: 'Rover Ruckus Robot',
+        teamName: '(In)Formal Logic',
+        teamNumber: '9872',
+        program: 'FTC',
+        season: '18-19',
+        country: 'Harrisburg, Pennsylvania',
+        description: ' ',
+        tags: ["Rover Ruckus"],
+        links: [
+            { text: 'Fusion 360', url: 'https://myhub.autodesk360.com/ue2814ea3/g/shares/SH56a43QTfd62c1cd968250c04221a0d6400', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 37,
+        title: 'Rover Ruckus Robot',
+        teamName: 'Quantum Robotics',
+        teamNumber: '14270',
+        program: 'FTC',
+        season: '18-19',
+        country: 'Bucharest, Romania',
+        description: ' ',
+        tags: ["Rover Ruckus"],
+        links: [
+            { text: 'Fusion 360', url: 'https://myhub.autodesk360.com/ue2b699be/g/shares/SH56a43QTfd62c1cd968e7fc6e5b3808809c', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 38,
+        title: 'Into The Deep Robot',
+        teamName: 'Robo Kai',
+        teamNumber: '17978',
+        program: 'FTC',
+        season: '24-25',
+        country: 'Ohio',
+        description: ' ',
+        tags: ["Into the Deep"],
+        links: [
+            { text: 'Google Drive', url: 'https://drive.google.com/drive/folders/1gxJu5C4J5Z56zXodPUi-OxYn7YO8IOp9', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 39,
+        title: 'Into The Deep Robot',
+        teamName: 'Red Ring of Death',
+        teamNumber: '22581',
+        program: 'FTC',
+        season: '24-25',
+        country: 'Kennesaw, Georgia',
+        description: ' ',
+        tags: ["Into the Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/37697f9e12c866601bb956d1/w/64bdcd69584e980a5359bec1/e/a254c83e3ab71d0f5b71068f?renderMode=0&uiState=67ba934697a9ca50fe2efc36', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 40,
+        title: 'Into The Deep Robot',
+        teamName: 'Seattle Solvers',
+        teamNumber: '23511',
+        program: 'FTC',
+        season: '24-25',
+        country: 'Sammamish, Washington',
+        description: ' ',
+        tags: ["Into the Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/ae5ff79658ff2a51ece82558/w/1babafd80652d7e5216f214c/e/548f3b6bbedc29b9264b1a15', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 41,
+        title: 'Into The Deep Robot',
+        teamName: 'FRITS',
+        teamNumber: '25209',
+        program: 'FTC',
+        season: '24-25',
+        country: 'Hà Nội, HN, Vietnam',
+        description: ' ',
+        tags: ["Into the Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/d66e428ea5bdfea5f78e1178/w/ea2c9af518345c418296094f/e/b2b467b7be8b145c6aa6992e', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 42,
+        title: 'Into The Deep Robot',
+        teamName: 'Wolves Robotics',
+        teamNumber: '5189',
+        program: 'FTC',
+        season: '24-25',
+        country: 'San Antonio, Texas,',
+        description: ' ',
+        tags: ["Into the Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/8b9c71ef444b0ca656b77248/w/6408dc3be6975f56ecf4b94c/e/6fd499479be35b74682dfd6f', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 43,
+        title: 'Into The Deep Robot',
+        teamName: 'Quixilver',
+        teamNumber: '8404',
+        program: 'FTC',
+        season: '24-25',
+        country: 'San Jose, California,',
+        description: ' ',
+        tags: ["Into the Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/84457a80136c5bcb36868f22/w/ce1629cfbf3e919954057377/e/11830431fc76c4a9509a3bce?renderMode=0&uiState=67ba94de4bbffc2d298d0adf', icon: 'fas fa-cube' }
+        ]
+    },
+    {
+        id: 44,
+        title: 'Into The Deep Robot',
+        teamName: 'Cotiere Robotics',
+        teamNumber: '25012',
+        program: 'FTC',
+        season: '24-25',
+        country: 'France',
+        description: ' ',
+        tags: ["Into the Deep"],
+        links: [
+            { text: 'Google Drive', url: 'https://drive.google.com/file/d/1a-VhdKkHIDGIoJ3HzPVR9U0VI04-S-uD/view', icon: 'fas fa-cube' }
+        ]
+    }
 ];
-
 
 // Google Sheet config (GViz JSON)
 const GOOGLE_SHEET_ID = '1snp1ROWqbTpuxhxcNPTm7MDR_iuvI27wdZBAFR_GkDY';
 const GOOGLE_GID = '0';
 const GVIZ_URL = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/gviz/tq?tqx=out:json&gid=${GOOGLE_GID}`;
-// Placeholder thumbnail (Onshape logo)
 const PLACEHOLDER_THUMBNAIL = 'https://www.cadsharp.com/wp-content/uploads/2023/09/Onshape-logo-outline.png';
 
-// Holds the complete dataset (either fetched or fallback)
 let allProjects = [];
 
-// Initialize projects when DOM is loaded
 document.addEventListener('DOMContentLoaded', initializeProjects);
 
 async function initializeProjects() {
@@ -662,12 +647,10 @@ async function initializeProjects() {
 async function fetchProjectsFromSheet() {
     const res = await fetch(GVIZ_URL, { cache: 'no-store' });
     const text = await res.text();
-    // Strip GViz JSONP wrapper
     const json = JSON.parse(text.replace(/^.*setResponse\(/, '').replace(/\);?\s*$/, ''));
     const table = json.table;
     if (!table || !table.rows) return [];
 
-    // Map columns by header label (case-insensitive)
     const cols = table.cols.map(c => (c && c.label ? c.label.trim().toLowerCase() : ''));
 
     const getVal = (row, idx) => {
@@ -678,11 +661,9 @@ async function fetchProjectsFromSheet() {
         return String(cell.v);
     };
 
-    // Expected columns: TEAM NAME, TEAM #, COUNTRY/STATE (if US), CAD FILE LINK, SEASON (OF CAD FILE)
-    // Optional: PROGRAM, DESCRIPTION, TAGS (comma sep), THUMBNAIL
     const idxTeamName = cols.indexOf('team name');
     const idxTeamNum = cols.indexOf('team #');
-    const idxCountry = cols.findIndex(c => c.startsWith('country')); // country/state (if US)
+    const idxCountry = cols.findIndex(c => c.startsWith('country'));
     const idxCadLink = cols.findIndex(c => c.includes('cad file'));
     const idxSeason = cols.findIndex(c => c.startsWith('season'));
     const idxProgram = cols.indexOf('program');
@@ -703,7 +684,6 @@ async function fetchProjectsFromSheet() {
         const tagsRaw = idxTags >= 0 ? getVal(row, idxTags) : '';
         const thumbnail = idxThumb >= 0 ? getVal(row, idxThumb) : '';
 
-        // Skip rows without essential fields
         if (!teamName && !teamNumber && !cadLink) return;
 
         const links = cadLink
@@ -737,17 +717,22 @@ function renderProjects(projects) {
     
     if (!projectsGrid) return;
     
+    // Safely check if noResults element exists before modifying inline styles
+    if (noResults) {
+        noResults.style.display = projects.length === 0 ? 'block' : 'none';
+    }
+    
     if (projects.length === 0) {
         projectsGrid.innerHTML = '';
-        noResults.style.display = 'block';
         return;
     }
     
-    noResults.style.display = 'none';
-    
     projectsGrid.innerHTML = projects.map(project => {
-        const primaryLink = (project.links && project.links[0] && project.links[0].url) ? project.links[0].url : '';
+        const links = project.links || [];
+        const tags = project.tags || [];
+        const primaryLink = (links[0] && links[0].url) ? links[0].url : '';
         const clickableClass = primaryLink ? ' clickable' : '';
+
         return `
         <div class="project-card${clickableClass}" ${primaryLink ? `data-link="${primaryLink}"` : ''}>
             <div class="project-thumb">
@@ -760,20 +745,20 @@ function renderProjects(projects) {
             </div>
             <div class="project-header">
                 <div>
-                    <h3 class="project-title">${project.title}</h3>
-                    <p class="project-team">${project.teamName} #${project.teamNumber}</p>
+                    <h3 class="project-title">${project.title || ''}</h3>
+                    <p class="project-team">${project.teamName || ''} #${project.teamNumber || ''}</p>
                     ${project.country ? `<p class="project-location">${project.country}</p>` : ''}
                 </div>
-                <span class="project-season">${project.season}</span>
+                <span class="project-season">${project.season || ''}</span>
             </div>
-            <p class="project-description">${project.description}</p>
+            <p class="project-description">${project.description || ''}</p>
             <div class="project-tags">
-                <span class="project-tag program-tag">${project.program}</span>
-                <span class="project-tag season-tag">${project.season}</span>
-                ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+                <span class="project-tag program-tag">${project.program || ''}</span>
+                <span class="project-tag season-tag">${project.season || ''}</span>
+                ${tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
             </div>
             <div class="project-links">
-                ${project.links.map(link => `
+                ${links.map(link => `
                     <a href="${link.url}" class="project-link" target="_blank" rel="noopener noreferrer">
                         ${link.icon ? `<i class="${link.icon}"></i>` : ''}
                         ${link.text || 'Open CAD'}
@@ -783,13 +768,12 @@ function renderProjects(projects) {
         </div>
     `;}).join('');
 
-    // Make entire card clickable to open primary CAD link, except when clicking on inner anchors
     const cards = projectsGrid.querySelectorAll('.project-card.clickable');
     cards.forEach(card => {
         const href = card.getAttribute('data-link');
         if (!href) return;
         card.addEventListener('click', (e) => {
-            if (e.target.closest('a')) return; // allow normal link clicks inside
+            if (e.target.closest('a')) return;
             window.open(href, '_blank', 'noopener');
         });
     });
@@ -801,271 +785,36 @@ function setupProjectFilters() {
     const programFilter = document.getElementById('program-filter');
     const seasonFilter = document.getElementById('season-filter');
     const clearFiltersBtn = document.getElementById('clear-filters');
-    
-    if (!teamNameFilter) return;
-    
-    // Add event listeners to all filter inputs
-    [teamNameFilter, teamNumberFilter, programFilter, seasonFilter].forEach(filter => {
-        if (filter) {
-            filter.addEventListener('input', filterProjects);
-        }
-    });
-    
+
+    function applyFilters() {
+        const nameVal = teamNameFilter ? teamNameFilter.value.toLowerCase().trim() : '';
+        const numVal = teamNumberFilter ? teamNumberFilter.value.toLowerCase().trim() : '';
+        const progVal = programFilter ? programFilter.value : '';
+        const seasonVal = seasonFilter ? seasonFilter.value : '';
+
+        const filtered = allProjects.filter(p => {
+            const matchName = !nameVal || (p.teamName && p.teamName.toLowerCase().includes(nameVal));
+            const matchNum = !numVal || (p.teamNumber && p.teamNumber.toLowerCase().includes(numVal));
+            const matchProg = !progVal || progVal === 'all' || p.program === progVal;
+            const matchSeason = !seasonVal || seasonVal === 'all' || p.season === seasonVal;
+            return matchName && matchNum && matchProg && matchSeason;
+        });
+
+        renderProjects(filtered);
+    }
+
+    if (teamNameFilter) teamNameFilter.addEventListener('input', applyFilters);
+    if (teamNumberFilter) teamNumberFilter.addEventListener('input', applyFilters);
+    if (programFilter) programFilter.addEventListener('change', applyFilters);
+    if (seasonFilter) seasonFilter.addEventListener('change', applyFilters);
+
     if (clearFiltersBtn) {
-        clearFiltersBtn.addEventListener('click', clearFilters);
-    }
-}
-
-function filterProjects() {
-    const teamNameFilter = document.getElementById('team-name-filter');
-    const teamNumberFilter = document.getElementById('team-number-filter');
-    const programFilter = document.getElementById('program-filter');
-    const seasonFilter = document.getElementById('season-filter');
-    
-    if (!teamNameFilter) return;
-    
-    const teamName = teamNameFilter.value.toLowerCase().trim();
-    const teamNumber = teamNumberFilter.value.toLowerCase().trim();
-    const program = programFilter.value;
-    const season = seasonFilter.value;
-    
-    const filteredProjects = (allProjects && allProjects.length ? allProjects : projectsData).filter(project => {
-        const matchesTeamName = !teamName || project.teamName.toLowerCase().includes(teamName);
-        const matchesTeamNumber = !teamNumber || project.teamNumber.includes(teamNumber);
-        const matchesProgram = !program || project.program === program;
-        const matchesSeason = !season || project.season === season;
-        
-        return matchesTeamName && matchesTeamNumber && matchesProgram && matchesSeason;
-    });
-    
-    renderProjects(filteredProjects);
-}
-
-function clearFilters() {
-    const teamNameFilter = document.getElementById('team-name-filter');
-    const teamNumberFilter = document.getElementById('team-number-filter');
-    const programFilter = document.getElementById('program-filter');
-    const seasonFilter = document.getElementById('season-filter');
-    
-    if (teamNameFilter) teamNameFilter.value = '';
-    if (teamNumberFilter) teamNumberFilter.value = '';
-    if (programFilter) programFilter.value = '';
-    if (seasonFilter) seasonFilter.value = '';
-    
-    renderProjects(allProjects && allProjects.length ? allProjects : projectsData);
-}
-
-// Mobile Navigation Toggle
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
-if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-}
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-    if (hamburger && navMenu) {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
-    }
-}));
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-// Navbar background change on scroll
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (navbar) {
-        if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(10, 10, 10, 0.98)';
-        } else {
-            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
-        }
-    }
-});
-
-// Intersection Observer for animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observe elements for animation
-document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.category-card, .team-member, .stat, .project-card');
-    
-    animateElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-});
-
-// Contact form handling
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const subject = formData.get('subject');
-        const message = formData.get('message');
-        
-        // Simple validation
-        if (!name || !email || !subject || !message) {
-            showNotification('Please fill in all fields', 'error');
-            return;
-        }
-        
-        // Simulate form submission
-        showNotification('Thank you for your message! We\'ll get back to you soon.', 'success');
-        contactForm.reset();
-    });
-}
-
-// Notification system
-function showNotification(message, type = 'info') {
-    // Remove existing notifications
-    const existingNotification = document.querySelector('.notification');
-    if (existingNotification) {
-        existingNotification.remove();
-    }
-    
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.innerHTML = `
-        <div class="notification-content">
-            <span class="notification-message">${message}</span>
-            <button class="notification-close">&times;</button>
-        </div>
-    `;
-    
-    // Add styles
-    notification.style.cssText = `
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        background: ${type === 'success' ? '#00d4ff' : type === 'error' ? '#ff6b35' : '#7b68ee'};
-        color: white;
-        padding: 1rem 1.5rem;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        z-index: 10000;
-        transform: translateX(400px);
-        transition: transform 0.3s ease;
-        max-width: 300px;
-    `;
-    
-    notification.querySelector('.notification-content').style.cssText = `
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-    `;
-    
-    notification.querySelector('.notification-close').style.cssText = `
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        padding: 0;
-        width: 20px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    `;
-    
-    // Add to DOM
-    document.body.appendChild(notification);
-    
-    // Animate in
-    setTimeout(() => {
-        notification.style.transform = 'translateX(0)';
-    }, 100);
-    
-    // Close button functionality
-    notification.querySelector('.notification-close').addEventListener('click', () => {
-        notification.style.transform = 'translateX(400px)';
-        setTimeout(() => notification.remove(), 300);
-    });
-    
-    // Auto remove after 5 seconds
-    setTimeout(() => {
-        if (notification.parentNode) {
-            notification.style.transform = 'translateX(400px)';
-            setTimeout(() => notification.remove(), 300);
-        }
-    }, 5000);
-}
-
-// Add hover effects to cards
-document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.category-card, .team-member, .project-card');
-    
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.transform = 'translateY(-10px) scale(1.02)';
+        clearFiltersBtn.addEventListener('click', () => {
+            if (teamNameFilter) teamNameFilter.value = '';
+            if (teamNumberFilter) teamNumberFilter.value = '';
+            if (programFilter) programFilter.value = 'all';
+            if (seasonFilter) seasonFilter.value = 'all';
+            renderProjects(allProjects);
         });
-        
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(0) scale(1)';
-        });
-    });
-});
-
-// Add loading animation
-window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    document.body.style.transition = 'opacity 0.5s ease';
-    
-    setTimeout(() => {
-        document.body.style.opacity = '1';
-    }, 100);
-});
-
-// Add keyboard navigation
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-        // Close mobile menu
-        if (hamburger && navMenu) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        }
-        
-        // Close notifications
-        const notifications = document.querySelectorAll('.notification');
-        notifications.forEach(notification => notification.remove());
     }
-});
+}
