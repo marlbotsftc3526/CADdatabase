@@ -642,6 +642,20 @@ const projectsData = [
         tags: ["Into the Deep"],
         links: [
             { text: 'Onshape', url: 'https://cad.onshape.com/documents/7573300c60aec127cf587728/w/96f139eb25cbe55565a1fb2b/e/a7102a7ddccdcdd7951b32c4', icon: 'fas fa-cube' }
+                ]
+            },
+    {
+         id: 47,
+        title: 'Decode Robot',
+        teamName: 'OmicronX',
+        teamNumber: '30099',
+        program: 'FTC',
+        season: '25-26',
+        country: 'Irvine, California',
+        description: ' ',
+        tags: ["Into the Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/c1e442ac6f370555984182d5/w/18917fa871bbc603bc7e6d36/e/ca72e1a1b4724fb84b28cdd3', icon: 'fas fa-cube' }
             ]
     }
     
