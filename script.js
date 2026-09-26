@@ -628,8 +628,23 @@ const projectsData = [
         tags: ["Into the Deep"],
         links: [
             { text: 'Google Drive', url: 'https://drive.google.com/file/d/1DvmzXrwTwdSR4s2S0yO9oNmaqk0oBaFA/view', icon: 'fas fa-cube' }
-        ]
+              ]
+        },
+    {
+         id: 46,
+        title: 'Decode Robot',
+        teamName: 'Ghost Robotics',
+        teamNumber: '3565',
+        program: 'FTC',
+        season: '25-26',
+        country: 'Westford, Massachusetts',
+        description: ' ',
+        tags: ["Into the Deep"],
+        links: [
+            { text: 'Onshape', url: 'https://cad.onshape.com/documents/7573300c60aec127cf587728/w/96f139eb25cbe55565a1fb2b/e/a7102a7ddccdcdd7951b32c4', icon: 'fas fa-cube' }
+            ]
     }
+    
 ];
 
 // Google Sheet config (GViz JSON)
