@@ -871,19 +871,14 @@ function setupProjectFilters() {
     if (seasonFilter) seasonFilter.addEventListener('change', applyFilters);
 
     // Clear Filters button
-   if (clearFiltersBtn) {
-    clearFiltersBtn.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevents page reload if button is inside a <form>
-
-        // Reset text inputs
-        if (teamNameFilter) teamNameFilter.value = '';
-        if (teamNumberFilter) teamNumberFilter.value = '';
-
-        // Reset dropdowns to their first option (<option>) regardless of value attribute
-        if (programFilter) programFilter.selectedIndex = 0;
-        if (seasonFilter) seasonFilter.selectedIndex = 0;
-
-        // Re-run filter logic to update grid
-        applyFilters();
-    });
+    if (clearFiltersBtn) {
+        clearFiltersBtn.addEventListener('click', () => {
+            if (teamNameFilter) teamNameFilter.value = '';
+            if (teamNumberFilter) teamNumberFilter.value = '';
+            if (programFilter) programFilter.value = 'all';
+            if (seasonFilter) seasonFilter.value = 'all';
+            renderProjects(allProjects);
+        });
+    }
 }
+
