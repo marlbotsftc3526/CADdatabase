@@ -830,34 +830,54 @@ function setupProjectFilters() {
     const clearFiltersBtn = document.getElementById('clear-filters');
 
     function applyFilters() {
+        // Normalize input values (lowercase + trim whitespace)
         const nameVal = teamNameFilter ? teamNameFilter.value.toLowerCase().trim() : '';
         const numVal = teamNumberFilter ? teamNumberFilter.value.toLowerCase().trim() : '';
-        const progVal = programFilter ? programFilter.value : '';
-        const seasonVal = seasonFilter ? seasonFilter.value : '';
+        const progVal = programFilter ? programFilter.value.toLowerCase().trim() : '';
+        const seasonVal = seasonFilter ? seasonFilter.value.toLowerCase().trim() : '';
 
         const filtered = allProjects.filter(p => {
-            const matchName = !nameVal || (p.teamName && p.teamName.toLowerCase().includes(nameVal));
-            const matchNum = !numVal || (p.teamNumber && p.teamNumber.toLowerCase().includes(numVal));
-            const matchProg = !progVal || progVal === 'all' || p.program === progVal;
-            const matchSeason = !seasonVal || seasonVal === 'all' || p.season === seasonVal;
+            // Safely convert project fields to lowercase strings
+            const teamName = String(p.teamName || '').toLowerCase().trim();
+            const teamNumber = String(p.teamNumber || '').toLowerCase().trim();
+            const program = String(p.program || '').toLowerCase().trim();
+            const season = String(p.season || '').toLowerCase().trim();
+
+            // 1. Team Name Match (partial search)
+            const matchName = !nameVal || teamName.includes(nameVal);
+
+            // 2. Team Number Match (partial search)
+            const matchNum = !numVal || teamNumber.includes(numVal);
+
+            // 3. Program Match (case-insensitive)
+            const matchProg = !progVal || progVal === 'all' || program === progVal;
+
+            // 4. Season Match (flexible match to handle "24-25" vs "2024-2025")
+            const matchSeason = !seasonVal || seasonVal === 'all' || 
+                                season === seasonVal || 
+                                season.includes(seasonVal) || 
+                                seasonVal.includes(season);
+
             return matchName && matchNum && matchProg && matchSeason;
         });
 
         renderProjects(filtered);
     }
 
+    // Attach listeners for text inputs and dropdown changes
     if (teamNameFilter) teamNameFilter.addEventListener('input', applyFilters);
     if (teamNumberFilter) teamNumberFilter.addEventListener('input', applyFilters);
     if (programFilter) programFilter.addEventListener('change', applyFilters);
     if (seasonFilter) seasonFilter.addEventListener('change', applyFilters);
 
+    // Clear Filters button
     if (clearFiltersBtn) {
         clearFiltersBtn.addEventListener('click', () => {
             if (teamNameFilter) teamNameFilter.value = '';
             if (teamNumberFilter) teamNumberFilter.value = '';
             if (programFilter) programFilter.value = 'all';
             if (seasonFilter) seasonFilter.value = 'all';
-            renderProjects(allProjects);
+            applyFilters(); // Re-run applyFilters to render clean list
         });
     }
 }
