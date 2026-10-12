@@ -1341,34 +1341,30 @@ section {
 /*}
 */
 
-/* ===== FINAL FRONT-END LAYOUT FIX ===== */
+/* ===== RESPONSIVE FULLSCREEN LAYOUT FIX ===== */
 
-/* Prevent unexpected sizing and horizontal overflow */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-.container {
+#projects {
     width: 100%;
-    max-width: 1200px;
-    margin-inline: auto;
-    padding-inline: 20px;
+    min-width: 0;
 }
 
-/* Keep project cards in an even grid */
+#projects .container {
+    width: 100%;
+    max-width: 1600px;
+    margin-inline: auto;
+    padding-inline: clamp(16px, 2.5vw, 40px);
+}
+
+/* Let available screen width determine column count */
 html body #projects #projects-grid.projects-grid {
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 24px !important;
+    gap: clamp(16px, 1.5vw, 28px) !important;
     width: 100%;
     align-items: stretch;
 }
 
-/* Make every card fill its grid cell */
+/* Consistent cards */
 html body #projects #projects-grid.projects-grid > .project-card {
     display: flex !important;
     flex-direction: column;
@@ -1377,10 +1373,30 @@ html body #projects #projects-grid.projects-grid > .project-card {
     max-width: none !important;
     height: 100%;
     margin: 0 !important;
-    padding: 24px;
+    padding: clamp(16px, 1.5vw, 28px);
 }
 
-/* Standardize image dimensions */
+/* Prevent long text from stretching cards horizontally */
+#projects-grid .project-header,
+#projects-grid .project-links {
+    min-width: 0;
+    flex-wrap: wrap;
+}
+
+#projects-grid .project-title,
+#projects-grid .project-description,
+#projects-grid .project-team,
+#projects-grid .project-location {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+#projects-grid .project-season {
+    max-width: 100%;
+    white-space: normal;
+}
+
+/* Uniform thumbnails */
 #projects-grid .project-thumb {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -1389,65 +1405,44 @@ html body #projects #projects-grid.projects-grid > .project-card {
 }
 
 #projects-grid .project-thumb img {
-    display: block;
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
 }
 
-/* Keep card content from breaking the grid */
-#projects-grid .project-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 12px;
-}
-
-#projects-grid .project-title,
-#projects-grid .project-description {
-    overflow-wrap: anywhere;
-}
-
-#projects-grid .project-season {
-    flex-shrink: 0;
-}
-
-#projects-grid .project-tags {
-    align-content: flex-start;
-}
-
-/* Align action links along the bottom of each card */
+/* Keep links at the bottom */
 #projects-grid .project-links {
     margin-top: auto;
     padding-top: 16px;
 }
 
-/* Tablet */
-@media (max-width: 900px) {
+/* Large screens */
+@media (min-width: 1600px) {
     html body #projects #projects-grid.projects-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 20px !important;
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
     }
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-    .container {
-        padding-inline: 15px;
+/* Tablets */
+@media (max-width: 900px) {
+    html body #projects #projects-grid.projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     }
+}
 
+/* Phones */
+@media (max-width: 600px) {
     html body #projects #projects-grid.projects-grid {
         grid-template-columns: minmax(0, 1fr) !important;
-        gap: 18px !important;
-    }
-
-    html body #projects #projects-grid.projects-grid > .project-card {
-        padding: 20px;
+        gap: 16px !important;
     }
 }
 
 /* Fix invalid hero positioning */
-.hero {
+.hero,
+.hero::before,
+.hero::after {
     position: relative;
 }
 
