@@ -534,12 +534,16 @@ section {
     padding: 0.8rem 1.5rem;
     font-size: 0.9rem;
 }
-
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    animation: fadeInUp 0.6s ease-out;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(260px, 1fr)
+    );
+    gap: 24px;
+    width: 100%;
+    align-items: stretch;
+    box-sizing: border-box;
 }
 
 @keyframes fadeInUp {
