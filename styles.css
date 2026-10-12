@@ -1341,32 +1341,118 @@ section {
 /*}
 */
 
-/* FINAL CAD GRID OVERRIDE */
+/* ===== FINAL FRONT-END LAYOUT FIX ===== */
+
+/* Prevent unexpected sizing and horizontal overflow */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+/* Keep project cards in an even grid */
 html body #projects #projects-grid.projects-grid {
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
     gap: 24px !important;
-    align-items: stretch !important;
+    width: 100%;
+    align-items: stretch;
 }
 
-html body #projects #projects-grid.projects-grid > div.project-card {
-    display: block !important;
-    width: auto !important;
+/* Make every card fill its grid cell */
+html body #projects #projects-grid.projects-grid > .project-card {
+    display: flex !important;
+    flex-direction: column;
+    width: 100% !important;
     min-width: 0 !important;
     max-width: none !important;
+    height: 100%;
     margin: 0 !important;
+    padding: 24px;
 }
 
-/* Tablet layout */
+/* Standardize image dimensions */
+#projects-grid .project-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+#projects-grid .project-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Keep card content from breaking the grid */
+#projects-grid .project-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+#projects-grid .project-title,
+#projects-grid .project-description {
+    overflow-wrap: anywhere;
+}
+
+#projects-grid .project-season {
+    flex-shrink: 0;
+}
+
+#projects-grid .project-tags {
+    align-content: flex-start;
+}
+
+/* Align action links along the bottom of each card */
+#projects-grid .project-links {
+    margin-top: auto;
+    padding-top: 16px;
+}
+
+/* Tablet */
 @media (max-width: 900px) {
     html body #projects #projects-grid.projects-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 20px !important;
     }
 }
 
-/* Phone layout */
-@media (max-width: 500px) {
+/* Mobile */
+@media (max-width: 600px) {
+    .container {
+        padding-inline: 15px;
+    }
+
     html body #projects #projects-grid.projects-grid {
         grid-template-columns: minmax(0, 1fr) !important;
+        gap: 18px !important;
     }
+
+    html body #projects #projects-grid.projects-grid > .project-card {
+        padding: 20px;
+    }
+}
+
+/* Fix invalid hero positioning */
+.hero {
+    position: relative;
+}
+
+.hero::before,
+.hero::after {
+    position: absolute;
+    pointer-events: none;
 }
