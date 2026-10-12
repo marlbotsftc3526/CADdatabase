@@ -1336,3 +1336,33 @@ section {
    /* border-radius: 8px;  /* Optional, for rounded corners */
 /*}
 */
+
+/* FINAL CAD GRID OVERRIDE */
+html body #projects #projects-grid.projects-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+}
+
+html body #projects #projects-grid.projects-grid > div.project-card {
+    display: block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    margin: 0 !important;
+}
+
+/* Tablet layout */
+@media (max-width: 900px) {
+    html body #projects #projects-grid.projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* Phone layout */
+@media (max-width: 500px) {
+    html body #projects #projects-grid.projects-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+}
