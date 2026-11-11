@@ -1451,3 +1451,171 @@ html body #projects #projects-grid.projects-grid > .project-card {
     position: absolute;
     pointer-events: none;
 }
+/* ==========================================
+   CAD DATABASE - FIXED PROJECT DISPLAY
+========================================== */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    width: 100%;
+    margin-top: 32px;
+    align-items: stretch;
+}
+
+/* CAD PROJECT CARD */
+.project-card {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* THUMBNAIL CONTAINER */
+.project-card .project-image,
+.project-card .cad-thumbnail {
+    width: 100%;
+    height: 220px;
+    min-height: 220px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* THUMBNAIL IMAGE */
+.project-card .project-image img,
+.project-card .cad-thumbnail img,
+.project-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* PROJECT INFORMATION */
+.project-card .project-info {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* PROJECT TITLE */
+.project-card h3,
+.project-card .project-title {
+    font-size: 1.35rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+/* TEAM NAME */
+.project-card .team-name {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* PROJECT DETAILS */
+.project-card p {
+    line-height: 1.5;
+}
+
+/* TAGS */
+.project-card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+/* BUTTON / VIEW LINK */
+.project-card .btn,
+.project-card .view-project {
+    margin-top: auto;
+}
+
+
+/* ==========================================
+   FILTER AREA
+========================================== */
+
+.filter-controls {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.filter-group {
+    min-width: 0;
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   SEASON FILTER
+========================================== */
+
+.filter-controls .filter-group:last-child {
+    grid-column: 1;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .filter-controls {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .filter-controls .filter-group:last-child {
+        grid-column: auto;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .filter-controls {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .project-card .project-image,
+    .project-card .cad-thumbnail {
+        height: 200px;
+        min-height: 200px;
+    }
+
+}
