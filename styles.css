@@ -1620,10 +1620,22 @@ html body #projects #projects-grid.projects-grid > .project-card {
 
 }
 
-/* Hero CAD Robot Image */
+/* ================================
+   HERO CAD IMAGE FIX
+================================ */
+
+.hero-visual {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .robot-image-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1631,8 +1643,33 @@ html body #projects #projects-grid.projects-grid > .project-card {
 
 .robot-image-container img {
     width: 100%;
-    height: auto;
-    max-height: 500px;
+    height: 100%;
     object-fit: contain;
     display: block;
+}
+
+/* Keep the original hero text area stable */
+.hero-text {
+    flex: 1;
+}
+
+/* Desktop hero spacing */
+@media (min-width: 769px) {
+    .hero-content {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-visual {
+        width: 100%;
+    }
+
+    .robot-image-container {
+        width: 90%;
+        max-width: 450px;
+    }
 }
