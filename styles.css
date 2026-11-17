@@ -1619,3 +1619,20 @@ html body #projects #projects-grid.projects-grid > .project-card {
     }
 
 }
+
+/* Hero CAD Robot Image */
+.robot-image-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.robot-image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
+}
